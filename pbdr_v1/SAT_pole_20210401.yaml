@@ -9,7 +9,6 @@ universe:
   atmosphere: {atm_model_file: atm_20201217.hdf5}
 
 instrument:
-  name: 'SAT_pole'
   site : Pole
   sky_temp : None
   elevation : 50.0
@@ -64,11 +63,11 @@ instrument:
         skip_optical_elements: []
         chan_config:
           elements:
-            lf_1:  {band_center: 27.0,  fractional_bandwidth:  .222, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.63}
-            lf_2:  {band_center: 39.0,  fractional_bandwidth:  .462, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.65}
-            mf1_1: {band_center: 85.0,  fractional_bandwidth:  .24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
-            mf1_2: {band_center: 145.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
-            mf2_1: {band_center: 95.0,  fractional_bandwidth: 0.24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
-            mf2_2: {band_center: 155.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
-            uhf_1: {band_center: 225.0, fractional_bandwidth: 0.267, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.67}
-            uhf_2: {band_center: 278.0, fractional_bandwidth: 0.162, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.66}
+            LF_1:  {band_center: 27.0,  fractional_bandwidth:  .222, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.63}
+            LF_2:  {band_center: 39.0,  fractional_bandwidth:  .462, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.65}
+            MF1_1: {band_center: 85.0,  fractional_bandwidth:  .24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
+            MF1_2: {band_center: 145.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
+            MF2_1: {band_center: 95.0,  fractional_bandwidth: 0.24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
+            MF2_2: {band_center: 155.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
+            UHF_1: {band_center: 225.0, fractional_bandwidth: 0.267, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.67}
+            UHF_2: {band_center: 278.0, fractional_bandwidth: 0.162, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.66}
