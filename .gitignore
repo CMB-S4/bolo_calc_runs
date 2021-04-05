@@ -1,0 +1,6 @@
+#ignore annoying hidden files
+*.DS_Store
+*.Thumbs
+*.pyc
+
+
