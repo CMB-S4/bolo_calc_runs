@@ -1,4 +1,4 @@
-version: {date: 20210401, name:'SAT_pole'}
+version: {date: 20210401, name: 'SAT_pole'}
 
 sim_config: {nsky_sim: 0, ndet_sim: 0, save_summary: True, save_sim: True, config_dir: config, freq_resol: 0.1}
 
