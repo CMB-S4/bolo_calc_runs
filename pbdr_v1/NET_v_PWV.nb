@@ -33,6 +33,14 @@
     "version_telescope = str(dd['version']['name'])\n",
     "del dd['version']\n",
     "\n",
+    "#add fixed psats\n",
+    "psat ={}\n",
+    "psat['SAT_pole_20210401'] = [1.40, 6.13, 7.40, 12.25, 7.65, 13.30, 29.88, 39.03]\n",
+    "psat['SPLAT_20210401'] = [0.42, 0.69, 4.32, 4.65, 11.49, 29.31, 40.02]\n",
+    "psat['CHLAT_20210401'] = [0.72, 3.84, 4.47, 13.95, 41.52, 60.78]\n",
+    "\n",
+    "dd['instrument']['channel_default']['psat'] = psat[yaml_file.partition('.')[0]]\n",
+    "\n",
     "# location of atmosphere file\n",
     "dd['sim_config']['config_dir'] = '../../bolo-calc/config'\n",
     "\n",
@@ -131,6 +139,13 @@
     "with open('outputs/' + output_file_name, \"w\") as toml_file:\n",
     "    toml.dump(toml_output, toml_file)"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
