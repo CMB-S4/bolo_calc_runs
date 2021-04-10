@@ -1,4 +1,4 @@
-version: {date: 20210401, name:'CHLAT'}
+version: {date: 20210401, name: 'CHLAT'}
 
 sim_config: {nsky_sim: 0, ndet_sim: 0, save_summary: True, save_sim: True, config_dir: config, freq_resol: 0.1}
 
@@ -48,7 +48,7 @@ instrument:
     num_optics_tube: 1
     waist_factor: 3.0
     psat: None         # These should be set to avg of SPLAT and CHLAT values.
-    psat_factor: 3.0 
+    psat_factor: 3.0
     carrier_index: 2.0 # this is beta = n-1.  (This was set incorrectly in JR's original BoloCalc runs.)
     Tc: 0.16
     Tc_fraction: None
