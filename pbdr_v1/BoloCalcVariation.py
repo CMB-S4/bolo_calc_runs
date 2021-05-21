@@ -75,10 +75,13 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat):
     channel_dict = dict.fromkeys(ch_names)
 
     for chan in ch_names:
-        channel_dict[chan] = io_dict
+        channel_dict[chan] = io_dict.copy()
         channel_dict[chan][xparam_name] = xparam_vec
         channel_dict[chan][yparam_name] = np.array(outputs[yparam_name][chan])
         channel_dict[chan]['xdefault']=base_value[chan]
+
+
+
 
     #plot
     plt.clf()
@@ -107,6 +110,3 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat):
     return version_date,channel_dict
 
 ##############################3
-
-
-
