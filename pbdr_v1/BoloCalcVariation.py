@@ -10,7 +10,7 @@ from bolo import Top
 
 """ Functions to drive bolo-calc, varying inputs and saving/plotting inputs and outputs """
 
-def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat):
+def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_element=None):
     """ Run bolocalc and plot and save x vs y, for one telescope.
 
     version_date, channel_dict = vary_param_at_fixed_psat(x,y,yname,dd,psat)
@@ -98,6 +98,28 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat):
             for chan in ch_names:
                 outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
 
+    elif optical_element != None:
+
+        # Find the default (base) value for the varying parameter.
+        base_value = dict.fromkeys(ch_names)
+        for channel in ch_names:
+            base_value[channel] = dd['instrument']['optics_config']['elements'][optical_element][xparam_name]
+
+        # Create dictionary to store output vectors in.
+        outputs = {}
+        outputs[yparam_name]={}
+        for chan in ch_names:
+            outputs[yparam_name][chan]=np.array([])
+
+        # Call bolo-calc for each value of the x
+        for param_value in xparam_vec:
+            for chan in ch_names:
+                dd['instrument']['optics_config']['elements'][optical_element][xparam_name] = param_value
+            top = Top(**dd)
+            top.run()
+            tabs = top.instrument.tables
+            for chan in ch_names:
+                outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
 
     #save inputs & outputs to tesescope dictionary
     io_dict = dict.fromkeys([xparam_name, yparam_name])
