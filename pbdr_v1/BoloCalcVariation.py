@@ -48,26 +48,55 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat):
     for channel in ch_names:
         dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'][channel]['psat'] = psat[yaml_file.partition('.')[0]][channel]
 
-    # Find the default (base) value for the varying parameter.
-    base_value = dict.fromkeys(ch_names)
-    for channel in ch_names:
-        base_value[channel] = dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'][channel][xparam_name]
+    #different procedure if xparam is at instrument or channel level
+    instrument_params = ['site', 'sky_temp', 'elevation', 'pwv', 'obs_time', 'sky_fraction', 'obs_effic', 'NET']
+    channel_params = ['band_response','num_wafer_per_optics_tube','num_optics_tube','det_eff','waist_factor','psat','psat_factor','carrier_index','Tc','Tc_fraction','G','Flink','Yield','response_factor','bolo_resistance','read_frac']
 
-    # Create dictionary to store output vectors in.
-    outputs = {}
-    outputs[yparam_name]={}
-    for chan in ch_names:
-        outputs[yparam_name][chan]=np.array([])
+    if xparam_name in channel_params:
 
-    # Call bolo-calc for each value of the x
-    for param_value in xparam_vec:
+        # Find the default (base) value for the varying parameter.
+        base_value = dict.fromkeys(ch_names)
+        for channel in ch_names:
+            base_value[channel] = dd['instrument']['channel_default'][xparam_name]
+
+        # Create dictionary to store output vectors in.
+        outputs = {}
+        outputs[yparam_name]={}
         for chan in ch_names:
-            dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'][chan][xparam_name] = param_value
-        top = Top(**dd)
-        top.run()
-        tabs = top.instrument.tables
+            outputs[yparam_name][chan]=np.array([])
+
+        # Call bolo-calc for each value of the x
+        for param_value in xparam_vec:
+            for chan in ch_names:
+                dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'][chan][xparam_name] = param_value
+            top = Top(**dd)
+            top.run()
+            tabs = top.instrument.tables
+            for chan in ch_names:
+                outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
+
+    elif xparam_name in instrument_params:
+
+        # Find the default (base) value for the varying parameter.
+        base_value = dict.fromkeys(ch_names)
+        for channel in ch_names:
+            base_value[channel] = dd['instrument'][xparam_name]
+
+        # Create dictionary to store output vectors in.
+        outputs = {}
+        outputs[yparam_name]={}
         for chan in ch_names:
-            outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
+            outputs[yparam_name][chan]=np.array([])
+
+        # Call bolo-calc for each value of the x
+        for param_value in xparam_vec:
+            for chan in ch_names:
+                dd['instrument'][xparam_name] = param_value
+            top = Top(**dd)
+            top.run()
+            tabs = top.instrument.tables
+            for chan in ch_names:
+                outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
 
 
     #save inputs & outputs to tesescope dictionary
