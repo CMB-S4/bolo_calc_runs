@@ -137,14 +137,15 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_
     #plot
     plt.clf()
     n_chan = len(ch_names)
-    ii = n_chan
+    ii = 2*n_chan
 
     for chan in ch_names:
-        plt.subplot(n_chan,1,ii)
+        #print(chan+' '+str(ii))
+        plt.subplot(2*n_chan,2,ii)
         plt.plot(xparam_vec,outputs[yparam_name][chan])
         plt.axvline(x = base_value[chan], color="red")
         plt.ylabel(yparam_name)
-        if ii == n_chan:
+        if (ii >=2*n_chan-1):
             plt.xlabel(xparam_name)
         xmin, xmax, ymin, ymax = plt.axis()
         #plt.plot([base_value,base_value],[ymin,ymax],'r')
@@ -153,6 +154,23 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_
         plt.text(xloc,yloc,chan,color='r')
         plt.grid()
         ii = ii-1
+        
+        #print(chan+' '+str(ii))
+        plt.subplot(2*n_chan,2,ii)
+        plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
+        plt.axvline(x = base_value[chan], color="red")
+        ylabelstring = yparam_name+'/NET_min'
+        plt.ylabel(ylabelstring)
+        if (ii >=2*n_chan-1):
+            plt.xlabel(xparam_name)
+        xmin, xmax, ymin, ymax = plt.axis()
+        #plt.plot([base_value,base_value],[ymin,ymax],'r')
+        xloc = xmin + 0.8*(xmax-xmin)
+        yloc = ymin + 0.6*(ymax-ymin)
+        plt.text(xloc,yloc,chan,color='r')
+        plt.grid()
+        ii = ii-1
+        
     titlestring = 'Telescope: '+version_telescope+',   Version:'+version_date
     plt.title(titlestring)
 
