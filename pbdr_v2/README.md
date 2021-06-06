@@ -7,5 +7,26 @@
 
 Notes:  
 - carrier_index = beta = 2.7 as default.  This is (approximately) the highest of the fab-reported values.
+- Psat_factor = 3.0 for LATs, 2.5 for SATs.
 
+Psats from Basemodel runs using all nominal inputs:
 
+CHLAT:
+  Chan = ['LF_1','LF_2','MF_1','MF_2','UHF_1','UHF_2']
+  Psat1 = [0.6856, 3.6253, 4.1380, 12.8813, 37.5136, 55.2783]
+
+SPLAT:
+  Chan = ['ULF_1, 'LF_1','LF_2','MF_1','MF_2','UHF_1','UHF_2']
+  Psat2 = [0.4061, 0.6868, 4.3047, 4.6640, 11.5170, 29.1024, 39.9944]
+  
+SAT:
+  Chan = ['LF_1','LF_2','MF1_1','MF1_2','MF2_1','MF2_2', 'UHF_1','UHF_2']
+  Psat3 = [1.4066, 6.3078, 7.3851, 12.2077, 7.6559, 13.2925, 29.8963, 39.0787]
+  
+
+LAT Psats, taking the average of CHLAT and SPLAT and rounding to 3 sig figs.
+Note that ULF is only in SPLAT.
+  Chan = ['ULF_1, 'LF_1','LF_2','MF_1','MF_2','UHF_1','UHF_2']
+  Psat = [ 0.406, 0.686, 3.97,  4.40 , 12.2 ,  33.3 , 47.6]
+  
+ 

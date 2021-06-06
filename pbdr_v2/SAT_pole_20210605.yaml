@@ -64,7 +64,7 @@ instrument:
         chan_config:
           elements:
             LF_1:  {band_center: 25.75,  fractional_bandwidth: 0.330, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.63}
-            LF_2:  {band_center: 38.75,  fractional_bandwidth: 0.462, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.65}
+            LF_2:  {band_center: 38.75,  fractional_bandwidth: 0.452, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.65}
             MF1_1: {band_center: 85.0,  fractional_bandwidth:  .24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
             MF1_2: {band_center: 145.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
             MF2_1: {band_center: 95.0,  fractional_bandwidth: 0.24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
