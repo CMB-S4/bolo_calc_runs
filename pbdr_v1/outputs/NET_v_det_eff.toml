@@ -1,6 +1,6 @@
 "CHLAT_20210401.yaml" = [ "20210401", [ "LF_1", "LF_2", "MF_1", "MF_2", "UHF_1", "UHF_2",],]
 "SPLAT_20210401.yaml" = [ "20210401", [ "ULF", "LF_1", "LF_2", "MF_1", "MF_2", "UHF_1", "UHF_2",],]
-runtime = "2021/05/26 08:58:09"
+runtime = "2021/06/07 11:50:46"
 input_id = "20210401"
 variation = "NET_v_det_eff"
 
