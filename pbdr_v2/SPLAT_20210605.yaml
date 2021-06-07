@@ -50,7 +50,7 @@ instrument:
     waist_factor: 3.0
     psat: None    # These should be set to avg of SPLAT and CHLAT values.
     psat_factor: 3.0
-    carrier_index: 2.0   # this is beta = n-1.  (This was set incorrectly in JR's original BoloCalc runs.)
+    carrier_index: 2.7   # this is beta = n-1.  (This was set incorrectly in JR's original BoloCalc runs.)
     Tc: 0.16
     Tc_fraction: None
     G: None
@@ -66,7 +66,7 @@ instrument:
         skip_optical_elements: []
         chan_config:
           elements:   # note: we are pretending all the bands are in one tube to make IRshaders work
-            ULF:   {band_center:  20.0,  fractional_bandwidth: 0.250, pixel_size: 21.1, num_det_per_water:  54, det_eff: 0.65}
+            ULF_1:   {band_center:  20.0,  fractional_bandwidth: 0.250, pixel_size: 21.1, num_det_per_water:  54, det_eff: 0.65}
             LF_1:  {band_center:  25.75, fractional_bandwidth: 0.330, pixel_size: 16.1, num_det_per_water:  96, det_eff: 0.63}
             LF_2:  {band_center:  38.75, fractional_bandwidth: 0.452, pixel_size: 16.1, num_det_per_water:  96, det_eff: 0.65}
             MF_1:  {band_center:  91.5,  fractional_bandwidth: 0.317, pixel_size:  5.3, num_det_per_water: 864, det_eff: 0.65}

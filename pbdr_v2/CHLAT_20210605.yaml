@@ -49,7 +49,7 @@ instrument:
     waist_factor: 3.0
     psat: None         # These should be set to avg of SPLAT and CHLAT values.
     psat_factor: 3.0
-    carrier_index: 2.0 # this is beta = n-1.  (This was set incorrectly in JR's original BoloCalc runs.)
+    carrier_index: 2.7 # this is beta = n-1.  (This was set incorrectly in JR's original BoloCalc runs.)
     Tc: 0.16
     Tc_fraction: None
     G: None

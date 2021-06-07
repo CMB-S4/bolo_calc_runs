@@ -29,12 +29,12 @@ instrument:
       baffle: {absorption: 0.01}
       window:    {obj_type: Dielectric, reflection: 0.01, thickness: 0.03, index: 1.525, loss_tangent: 2.0E-4}
       # IR shaders:  emissivity proportional to frequency, pinned to 90GHz value derived from Bicep3
-      shader1: {temperature: 250.0, absorption: [0.00022, 0.00033, 0.00072, 0.00122, 0.00080, 0.00131, 0.00191, 0.00240]}
-      shader2: {temperature: 210.0, absorption: [0.00022, 0.00033, 0.00072, 0.00122, 0.00080, 0.00131, 0.00191, 0.00240]}
-      shader3: {temperature: 185.0, absorption: [0.00022, 0.00033, 0.00072, 0.00122, 0.00080, 0.00131, 0.00191, 0.00240]}
-      shader4: {temperature: 150.0, absorption: [0.00022, 0.00033, 0.00072, 0.00122, 0.00080, 0.00131, 0.00191, 0.00240]}
-      shader5: {temperature: 125.0, absorption: [0.00022, 0.00033, 0.00072, 0.00122, 0.00080, 0.00131, 0.00191, 0.00240]}
-      shader6: {temperature: 100.0, absorption: [0.00022, 0.00033, 0.00072, 0.00122, 0.00080, 0.00131, 0.00191, 0.00240]}
+      shader1: {temperature: 250.0, absorption: [0.00023, 0.00034, 0.00072, 0.00122, 0.00080, 0.00131, 0.00198, 0.00250]}
+      shader2: {temperature: 210.0, absorption: [0.00023, 0.00034, 0.00072, 0.00122, 0.00080, 0.00131, 0.00198, 0.00250]}
+      shader3: {temperature: 185.0, absorption: [0.00023, 0.00034, 0.00072, 0.00122, 0.00080, 0.00131, 0.00198, 0.00250]}
+      shader4: {temperature: 150.0, absorption: [0.00023, 0.00034, 0.00072, 0.00122, 0.00080, 0.00131, 0.00198, 0.00250]}
+      shader5: {temperature: 125.0, absorption: [0.00023, 0.00034, 0.00072, 0.00122, 0.00080, 0.00131, 0.00198, 0.00250]}
+      shader6: {temperature: 100.0, absorption: [0.00023, 0.00034, 0.00072, 0.00122, 0.00080, 0.00131, 0.00198, 0.00250]}
       alumina_filt: {obj_type: Dielectric, temperature: 50.0, reflection: 0.02, thickness: 0.006, index: 3.1, loss_tangent: 1.5E-4}
       lens1:        {obj_type: Dielectric, temperature:  4.0, reflection: 0.02, thickness: 0.01,  index: 3.1, loss_tangent: 1.5E-4}
       aperture:     {obj_type: ApertureStop,  temperature: 4.0} #this is a stop?
