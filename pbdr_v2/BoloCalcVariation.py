@@ -56,8 +56,13 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_
 
         # Find the default (base) value for the varying parameter.
         base_value = dict.fromkeys(ch_names)
-        for channel in ch_names:
-            base_value[channel] = dd['instrument']['channel_default'][xparam_name]
+        try:
+            for channel in ch_names:
+                base_value[channel] = dd['instrument']['channel_default'][xparam_name]
+        except:
+            for channel in ch_names:
+                base_value[channel] = dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'][channel][xparam_name]
+
 
         # Create dictionary to store output vectors in.
         outputs = {}
@@ -121,6 +126,8 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_
             for chan in ch_names:
                 outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
 
+        # Find the default (base) value for the output parameter.
+
     #save inputs & outputs to tesescope dictionary
     io_dict = dict.fromkeys([xparam_name, yparam_name])
     channel_dict = dict.fromkeys(ch_names)
@@ -154,7 +161,7 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_
         plt.text(xloc,yloc,chan,color='r')
         plt.grid()
         ii = ii-1
-        
+
         #print(chan+' '+str(ii))
         plt.subplot(2*n_chan,2,ii)
         plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
@@ -170,7 +177,7 @@ def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_
         plt.text(xloc,yloc,chan,color='r')
         plt.grid()
         ii = ii-1
-        
+
     titlestring = 'Telescope: '+version_telescope+',   Version:'+version_date
     plt.title(titlestring)
 
