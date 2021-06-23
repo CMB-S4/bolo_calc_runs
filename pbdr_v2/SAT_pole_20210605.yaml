@@ -63,11 +63,11 @@ instrument:
         skip_optical_elements: []
         chan_config:
           elements:
-            LF_1:  {band_center: 25.75,  fractional_bandwidth: 0.330, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.63}
-            LF_2:  {band_center: 38.75,  fractional_bandwidth: 0.452, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.65}
-            MF1_1: {band_center: 85.0,  fractional_bandwidth:  .24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
+            LF_1:  {band_center: 25.75, fractional_bandwidth: 0.330, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.63}
+            LF_2:  {band_center: 38.75, fractional_bandwidth: 0.452, pixel_size: 31.1, num_det_per_water:  74, det_eff: 0.65}
+            MF1_1: {band_center: 85.0,  fractional_bandwidth: 0.24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
             MF1_2: {band_center: 145.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
             MF2_1: {band_center: 95.0,  fractional_bandwidth: 0.24,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.65}
             MF2_2: {band_center: 155.0, fractional_bandwidth: 0.22,  pixel_size: 9.4,  num_det_per_water: 294, det_eff: 0.68}
-            UHF_1: {band_center: 227.0, fractional_bandwidth: 0.256, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.67}
-            UHF_2: {band_center: 285.5, fractional_bandwidth: 0.207, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.66}
+            HF_1:  {band_center: 227.0, fractional_bandwidth: 0.256, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.67}
+            HF_2:  {band_center: 285.5, fractional_bandwidth: 0.207, pixel_size: 5.2,  num_det_per_water: 938, det_eff: 0.66}
