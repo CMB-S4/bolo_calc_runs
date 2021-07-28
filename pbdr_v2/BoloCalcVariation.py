@@ -1284,6 +1284,7 @@ def net_v_PsatFac(xparam_vec, yaml_list):
         outputs['psat']={}
         for chan in ch_names:
             outputs[yparam_name][chan]=np.array([])
+            outputs['psat'][chan]=np.array([])
 
         # Call bolo-calc for each value of the x
         for param_value in xparam_vec:
@@ -1294,8 +1295,8 @@ def net_v_PsatFac(xparam_vec, yaml_list):
             tabs = top.instrument.tables
             for chan in ch_names:
                 outputs[yparam_name][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan][yparam_name].quantity[0])
-                outputs['psat'][chan] = np.append(outputs[yparam_name][chan], tabs['cam_1_%s_sims' % chan]['P_sat'])
-
+                outputs['psat'][chan] = np.append(outputs['psat'][chan], tabs['cam_1_%s_sims' % chan]['P_sat'].quantity[0])
+                #pdb.set_trace()
         #plot
         plt.ioff()
         plt.rcParams.update({'font.size': 18})
@@ -1352,6 +1353,7 @@ def net_v_PsatFac(xparam_vec, yaml_list):
             channel_dict[chan][yparam_name] = np.array(outputs[yparam_name][chan])
             channel_dict[chan]['psat'] = np.array(outputs['psat'][chan])
             channel_dict[chan]['xdefault']=base_value[chan]
+
         telescopes[yaml_file] = channel_dict
 
     telescopes["runtime"] = datetime.today().strftime('%Y/%m/%d %H:%M:%S')
