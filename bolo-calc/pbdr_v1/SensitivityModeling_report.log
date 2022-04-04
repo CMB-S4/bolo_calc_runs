@@ -1,0 +1,386 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 MAY 2021 18:12
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**SensitivityModeling_report.tex
+(./SensitivityModeling_report.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen135
+\captionmargin@=\dimen136
+\captionwidth=\dimen137
+\caption@tempdima=\dimen138
+\caption@indent=\dimen139
+\caption@parindent=\dimen140
+\caption@hangindent=\dimen141
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count175
+\c@continuedfloat=\count176
+)
+\c@KVtest=\count177
+\sf@farskip=\skip49
+\sf@captopadj=\dimen142
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count178
+\c@subfigure@save=\count179
+\c@lofdepth=\count180
+\c@subtable=\count181
+\c@subtable@save=\count182
+\c@lotdepth=\count183
+\sf@top=\skip52
+\sf@bottom=\skip53
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip63
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen145
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks17
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks18
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks19
+\multlinegap=\skip64
+\multlinetaggap=\skip65
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box47
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen154
+\ttl@minus=\dimen155
+\ttl@toksa=\toks21
+\titlewidth=\dimen156
+\titlewidthlast=\dimen157
+\titlewidthfirst=\dimen158
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/floatflt/floatflt.sty
+Package: floatflt 1997/07/16 v. 1.31
+\c@OptionTest=\count196
+\figbox=\box48
+\tabbox=\box49
+\pagebox=\box50
+\ffigcount=\count197
+\ftabcount=\count198
+\fftest=\count199
+\hangcount=\count266
+\nosuccesstryfig=\count267
+\nosuccesstrytab=\count268
+\figgutter=\dimen159
+\tabgutter=\dimen160
+\htdone=\dimen161
+\pageht=\dimen162
+\startpageht=\dimen163
+\tabbredd=\dimen164
+\floatfltwidth=\dimen165
+\fltitemwidth=\dimen166
+\outputpretest=\toks22
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip68
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count269
+\l__pdf_internal_box=\box51
+)
+(./SensitivityModeling_report.aux)
+\openout1 = `SensitivityModeling_report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: floatflt package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count270
+\scratchdimen=\dimen167
+\scratchbox=\box52
+\nofMPsegments=\count271
+\nofMParguments=\count272
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count273
+\MPscratchDim=\dimen168
+\MPnumerator=\count274
+\makeMPintoPDFobject=\count275
+\everyMPtoPDFconversion=\toks24
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<plots/CHLAT_20210401_NET_v_pwv.png, id=1, 867.24pt x 1445.4pt>
+File: plots/CHLAT_20210401_NET_v_pwv.png Graphic file (type png)
+<use plots/CHLAT_20210401_NET_v_pwv.png>
+Package pdftex.def Info: plots/CHLAT_20210401_NET_v_pwv.png  used on input line
+ 52.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+<plots/SPLAT_20210401_NET_v_pwv.png, id=3, 867.24pt x 1445.4pt>
+File: plots/SPLAT_20210401_NET_v_pwv.png Graphic file (type png)
+<use plots/SPLAT_20210401_NET_v_pwv.png>
+Package pdftex.def Info: plots/SPLAT_20210401_NET_v_pwv.png  used on input line
+ 57.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+<plots/SAT_pole_20210401_NET_v_pwv.png, id=4, 867.24pt x 1445.4pt>
+File: plots/SAT_pole_20210401_NET_v_pwv.png Graphic file (type png)
+<use plots/SAT_pole_20210401_NET_v_pwv.png>
+Package pdftex.def Info: plots/SAT_pole_20210401_NET_v_pwv.png  used on input l
+ine 61.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+
+Overfull \hbox (17.20496pt too wide) in paragraph at lines 52--63
+ [][][][] 
+ []
+
+<plots/CHLAT_20210401_NET_v_elevation.png, id=5, 867.24pt x 1445.4pt>
+File: plots/CHLAT_20210401_NET_v_elevation.png Graphic file (type png)
+<use plots/CHLAT_20210401_NET_v_elevation.png>
+Package pdftex.def Info: plots/CHLAT_20210401_NET_v_elevation.png  used on inpu
+t line 72.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+<plots/SPLAT_20210401_NET_v_elevation.png, id=6, 867.24pt x 1445.4pt>
+File: plots/SPLAT_20210401_NET_v_elevation.png Graphic file (type png)
+<use plots/SPLAT_20210401_NET_v_elevation.png>
+Package pdftex.def Info: plots/SPLAT_20210401_NET_v_elevation.png  used on inpu
+t line 77.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+<plots/SAT_pole_20210401_NET_v_elevation.png, id=7, 867.24pt x 1445.4pt>
+File: plots/SAT_pole_20210401_NET_v_elevation.png Graphic file (type png)
+<use plots/SAT_pole_20210401_NET_v_elevation.png>
+Package pdftex.def Info: plots/SAT_pole_20210401_NET_v_elevation.png  used on i
+nput line 81.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+
+Overfull \hbox (17.20496pt too wide) in paragraph at lines 72--83
+ [][][][] 
+ []
+
+<plots/CHLAT_20210401_NET_v_det_eff.png, id=8, 867.24pt x 1445.4pt>
+File: plots/CHLAT_20210401_NET_v_det_eff.png Graphic file (type png)
+<use plots/CHLAT_20210401_NET_v_det_eff.png>
+Package pdftex.def Info: plots/CHLAT_20210401_NET_v_det_eff.png  used on input 
+line 93.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+<plots/SPLAT_20210401_NET_v_det_eff.png, id=9, 867.24pt x 1445.4pt>
+File: plots/SPLAT_20210401_NET_v_det_eff.png Graphic file (type png)
+<use plots/SPLAT_20210401_NET_v_det_eff.png>
+Package pdftex.def Info: plots/SPLAT_20210401_NET_v_det_eff.png  used on input 
+line 98.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+<plots/SAT_pole_20210401_NET_v_det_eff.png, id=10, 867.24pt x 1445.4pt>
+File: plots/SAT_pole_20210401_NET_v_det_eff.png Graphic file (type png)
+<use plots/SAT_pole_20210401_NET_v_det_eff.png>
+Package pdftex.def Info: plots/SAT_pole_20210401_NET_v_det_eff.png  used on inp
+ut line 102.
+(pdftex.def)             Requested size: 155.02pt x 258.35226pt.
+
+Overfull \hbox (17.20496pt too wide) in paragraph at lines 93--104
+ [][][][] 
+ []
+
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2 <./plots/CHLAT_20210401_NET_v_pwv.png> <./plots/SPLAT_20210401_NET_v_pwv.png
+> <./plots/SAT_pole_20210401_NET_v_pwv.png>] [3 <./plots/CHLAT_20210401_NET_v_e
+levation.png> <./plots/SPLAT_20210401_NET_v_elevation.png> <./plots/SAT_pole_20
+210401_NET_v_elevation.png>] [4 <./plots/CHLAT_20210401_NET_v_det_eff.png> <./p
+lots/SPLAT_20210401_NET_v_det_eff.png> <./plots/SAT_pole_20210401_NET_v_det_eff
+.png>] (./SensitivityModeling_report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4560 strings out of 480608
+ 66154 string characters out of 5903631
+ 308386 words of memory out of 5000000
+ 20414 multiletter control sequences out of 15000+600000
+ 537900 words of font info for 45 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 50i,10n,49p,379b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on SensitivityModeling_report.pdf (4 pages, 4277964 bytes).
+PDF statistics:
+ 60 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

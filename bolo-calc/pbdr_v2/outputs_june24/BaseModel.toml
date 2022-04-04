@@ -1,0 +1,375 @@
+runtime = "2021/06/23 21:37:04"
+input_id = "20210623"
+variation = "BaseModel"
+
+["CHLAT_20210605.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Atacama"
+elevation = 40.0
+pwv = 993.0
+
+["CHLAT_20210605.yaml".LF_1]
+popt = 0.22853271758354834
+psat = 0.686
+net = 266.8955011894233
+netwafer = 30.455143020436257
+effic = 0.13664044352797533
+nep_photon = 4.497909645527948
+nep_phonon = 3.4370230868721707
+nep_readout = 1.8123307328134486
+Gdyn = 14.071794871794873
+corr_fact = 1.2650309686618748
+bandcenter = 25.75
+fractional_bandwidth = 0.33
+band_lowedge = 21.50125
+band_highedge = 29.99875
+
+["CHLAT_20210605.yaml".LF_2]
+popt = 1.2084248468729688
+psat = 3.9650000000000003
+net = 224.17016172897019
+netwafer = 25.579802978862134
+effic = 0.2602520540248846
+nep_photon = 16.260753374003748
+nep_phonon = 8.263080568407887
+nep_readout = 5.83958787749126
+Gdyn = 81.33333333333334
+corr_fact = 1.0388237770530038
+bandcenter = 38.75
+fractional_bandwidth = 0.452
+band_lowedge = 29.9925
+band_highedge = 47.5075
+
+["CHLAT_20210605.yaml".MF_1]
+popt = 1.379348526432213
+psat = 4.401
+net = 255.786017104825
+netwafer = 9.729150796021868
+effic = 0.1750621975519113
+nep_photon = 17.347886415426977
+nep_phonon = 8.705547225039021
+nep_readout = 6.214129934747013
+Gdyn = 90.27692307692307
+corr_fact = 1.1418906342064368
+bandcenter = 91.5
+fractional_bandwidth = 0.317
+band_lowedge = 76.99725
+band_highedge = 106.00275
+
+["CHLAT_20210605.yaml".MF_2]
+popt = 4.293768006138487
+psat = 12.199
+net = 286.56887422893186
+netwafer = 10.900016437086585
+effic = 0.353384971928206
+nep_photon = 42.25736150138891
+nep_phonon = 14.493808108356
+nep_readout = 14.302618471470304
+Gdyn = 250.2358974358974
+corr_fact = 1.0142570410774912
+bandcenter = 148.5
+fractional_bandwidth = 0.276
+band_lowedge = 128.007
+band_highedge = 168.993
+
+["CHLAT_20210605.yaml".HF_1]
+popt = 12.504548767560008
+psat = 33.308
+net = 659.9085428515208
+netwafer = 24.090029835692707
+effic = 0.45515522258609603
+nep_photon = 96.3446927776662
+nep_phonon = 23.949401759491582
+nep_readout = 31.784069142947917
+Gdyn = 683.2410256410258
+corr_fact = 1.0078428187059882
+bandcenter = 227.0
+fractional_bandwidth = 0.256
+band_lowedge = 197.944
+band_highedge = 256.056
+
+["CHLAT_20210605.yaml".HF_2]
+popt = 18.42609008354856
+psat = 47.636
+net = 1646.8876916127886
+netwafer = 60.1198060803309
+effic = 0.4540151542613635
+nep_photon = 137.35834764111385
+nep_phonon = 28.64099060289425
+nep_readout = 44.92194626198588
+Gdyn = 977.1487179487181
+corr_fact = 1.006940243299964
+bandcenter = 285.5
+fractional_bandwidth = 0.207
+band_lowedge = 255.95075
+band_highedge = 315.04925
+
+["SPLAT_20210605.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Pole"
+elevation = 50.0
+pwv = 321.0
+
+["SPLAT_20210605.yaml".ULF_1]
+popt = 0.13535990368102618
+psat = 0.406
+net = 329.2343427553378
+netwafer = 50.09141006457947
+effic = 0.14580196695600775
+nep_photon = 3.3262716867085267
+nep_phonon = 2.904892639902106
+nep_readout = 1.4138616162034787
+Gdyn = 11.389879496575952
+corr_fact = 1.2160016280990178
+bandcenter = 20.0
+fractional_bandwidth = 0.25
+band_lowedge = 17.5
+band_highedge = 22.5
+
+["SPLAT_20210605.yaml".LF_1]
+popt = 0.22891672734711527
+psat = 0.686
+net = 278.51922204292305
+netwafer = 31.781512627437298
+effic = 0.13642706312254244
+nep_photon = 4.531042243354585
+nep_phonon = 3.7759751479425536
+nep_readout = 1.888333668400983
+Gdyn = 19.244968804559367
+corr_fact = 1.2502829228993886
+bandcenter = 25.75
+fractional_bandwidth = 0.33
+band_lowedge = 21.50125
+band_highedge = 29.99875
+
+["SPLAT_20210605.yaml".LF_2]
+popt = 1.4348860400877783
+psat = 3.9650000000000003
+net = 266.217747901761
+netwafer = 30.37780536125377
+effic = 0.25522539378662534
+nep_photon = 19.20776956880064
+nep_phonon = 9.077968370631325
+nep_readout = 6.801702871965116
+Gdyn = 111.23367537912229
+corr_fact = 1.0417669840385644
+bandcenter = 38.75
+fractional_bandwidth = 0.452
+band_lowedge = 29.9925
+band_highedge = 47.5075
+
+["SPLAT_20210605.yaml".MF_1]
+popt = 1.5546590039168633
+psat = 4.401
+net = 283.43254962246715
+netwafer = 10.78072228884914
+effic = 0.17249196735671396
+nep_photon = 18.907220722344444
+nep_phonon = 9.564070167739951
+nep_readout = 6.783644259963277
+Gdyn = 123.46517158726786
+corr_fact = 1.1504492451922799
+bandcenter = 91.5
+fractional_bandwidth = 0.317
+band_lowedge = 76.99725
+band_highedge = 106.00275
+
+["SPLAT_20210605.yaml".MF_2]
+popt = 3.8389949564786683
+psat = 12.199
+net = 266.243371670435
+netwafer = 10.12690975348119
+effic = 0.35534616553559734
+nep_photon = 38.5486926019948
+nep_phonon = 15.9231572884212
+nep_readout = 13.3530421827341
+Gdyn = 342.22940881460596
+corr_fact = 1.0127919508739402
+bandcenter = 148.5
+fractional_bandwidth = 0.276
+band_lowedge = 128.007
+band_highedge = 168.993
+
+["SPLAT_20210605.yaml".HF_1]
+popt = 9.700789026425864
+psat = 33.308
+net = 540.4600004440466
+netwafer = 19.729548399898505
+effic = 0.46646763923134416
+nep_photon = 79.06271719414245
+nep_phonon = 26.311241899229998
+nep_readout = 26.677283534705637
+Gdyn = 934.4189809653985
+corr_fact = 1.0067092167783298
+bandcenter = 227.0
+fractional_bandwidth = 0.256
+band_lowedge = 197.944
+band_highedge = 256.056
+
+["SPLAT_20210605.yaml".HF_2]
+popt = 13.331483222493093
+psat = 47.636
+net = 1241.7218199080148
+netwafer = 45.32918388956993
+effic = 0.47481150313372
+nep_photon = 105.78883200688288
+nep_phonon = 31.465505466651848
+nep_readout = 35.33537729661833
+Gdyn = 1336.375122411064
+corr_fact = 1.0058009455491699
+bandcenter = 285.5
+fractional_bandwidth = 0.207
+band_lowedge = 255.95075
+band_highedge = 315.04925
+
+["SAT_LFMF_20210623.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Pole"
+elevation = 50.0
+pwv = 321.0
+
+["SAT_LFMF_20210623.yaml".LF_1]
+popt = 0.5179194740579712
+psat = 1.295
+net = 160.96475788686035
+netwafer = 20.92039823207906
+effic = 0.4169828233917186
+nep_photon = 9.038477187372107
+nep_phonon = 5.188023727000092
+nep_readout = 3.3365386489598174
+Gdyn = 36.329788049423286
+corr_fact = 1.036635859152665
+bandcenter = 25.75
+fractional_bandwidth = 0.33
+band_lowedge = 21.50125
+band_highedge = 29.99875
+
+["SAT_LFMF_20210623.yaml".LF_2]
+popt = 2.4055744827154717
+psat = 6.014
+net = 204.3914279174359
+netwafer = 26.564510911522255
+effic = 0.49692402309982947
+nep_photon = 29.777525159565275
+nep_phonon = 11.180179628970556
+nep_readout = 10.183269890824393
+Gdyn = 168.7160967793295
+corr_fact = 1.0073391955088071
+bandcenter = 38.75
+fractional_bandwidth = 0.452
+band_lowedge = 29.9925
+band_highedge = 47.5075
+
+["SAT_LFMF_20210623.yaml".MF1_1]
+popt = 2.8239891481894053
+psat = 7.219
+net = 286.2979482692821
+netwafer = 18.66807671839678
+effic = 0.3940064968356685
+nep_photon = 33.359742057564674
+nep_phonon = 12.2491397726626
+nep_readout = 11.377550969784366
+Gdyn = 202.5210346940438
+corr_fact = 1.0393083916123138
+bandcenter = 85.0
+fractional_bandwidth = 0.24
+band_lowedge = 74.8
+band_highedge = 95.2
+
+["SAT_LFMF_20210623.yaml".MF1_2]
+popt = 4.763711848018959
+psat = 12.432
+net = 285.0488476417491
+netwafer = 18.586629029076104
+effic = 0.5055566580183547
+nep_photon = 48.38762775219924
+nep_phonon = 16.074503595520234
+nep_readout = 16.3240497118852
+Gdyn = 348.7659652744636
+corr_fact = 1.006634075404453
+bandcenter = 145.0
+fractional_bandwidth = 0.22
+band_lowedge = 129.05
+band_highedge = 160.95
+
+["SAT_LFMF_20210623.yaml".MF2_1]
+popt = 2.9512218391833045
+psat = 7.219
+net = 247.51109179679875
+netwafer = 16.138977167837922
+effic = 0.4305994305356322
+nep_photon = 33.75339727574612
+nep_phonon = 12.2491397726626
+nep_readout = 11.495940953854907
+Gdyn = 202.5210346940438
+corr_fact = 1.0221339317505593
+bandcenter = 95.0
+fractional_bandwidth = 0.24
+band_lowedge = 83.6
+band_highedge = 106.4
+
+["SAT_LFMF_20210623.yaml".MF2_2]
+popt = 5.182237437756974
+psat = 12.432
+net = 302.46258792951454
+netwafer = 19.722093120283915
+effic = 0.5050610308912693
+nep_photon = 51.490527026119615
+nep_phonon = 16.074503595520234
+nep_readout = 17.269642845906507
+Gdyn = 348.7659652744636
+corr_fact = 1.0028409939625154
+bandcenter = 155.0
+fractional_bandwidth = 0.22
+band_lowedge = 137.95
+band_highedge = 172.05
+
+["SAT_HF_20210623.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Pole"
+elevation = 50.0
+pwv = 321.0
+
+["SAT_HF_20210623.yaml".HF_1]
+popt = 11.719103771969948
+psat = 29.298000000000002
+net = 621.5258698371226
+netwafer = 22.68886637432116
+effic = 0.4587111815182709
+nep_photon = 91.33594257562204
+nep_phonon = 24.676641784544824
+nep_readout = 30.29021431475614
+Gdyn = 821.9228805189216
+corr_fact = 1.003948371256812
+bandcenter = 227.0
+fractional_bandwidth = 0.256
+band_lowedge = 197.944
+band_highedge = 256.056
+
+["SAT_HF_20210623.yaml".HF_2]
+popt = 15.2256939716887
+psat = 38.064
+net = 1468.8742857960333
+netwafer = 53.6214082284883
+effic = 0.4370752287611503
+nep_photon = 117.1500450505011
+nep_phonon = 28.12705625348224
+nep_readout = 38.57219977852121
+Gdyn = 1067.8432836395737
+corr_fact = 1.0021157456619916
+bandcenter = 285.5
+fractional_bandwidth = 0.207
+band_lowedge = 255.95075
+band_highedge = 315.04925
