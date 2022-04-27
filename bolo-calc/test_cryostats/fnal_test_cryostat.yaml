@@ -28,7 +28,6 @@ instrument:
     elements:
       room: {temperature: 300.0, absorption: 1.0, reflection: 0.0}
       window:    {obj_type: Dielectric, reflection: 0.01, thickness: 0.00635, index: 1.525, loss_tangent: 3.0E-4}
-      # IR shaders:  emissivity proportional to frequency, pinned to 90GHz value derived from Bicep3
       RTMLI_1 :  {temperature: 283.164516, absorption: [0.0000, 0.0000, 0.0001, 0.0003, 0.0001, 0.0004, 0.0013, 0.0027, 0.0000, 0.0000, 0.0000, 0.0001, 0.0003, 0.0013, 0.0027]}  # 10 layers
       RTMLI_2 :  {temperature: 275.797987, absorption: [0.0000, 0.0000, 0.0001, 0.0003, 0.0001, 0.0004, 0.0013, 0.0027, 0.0000, 0.0000, 0.0000, 0.0001, 0.0003, 0.0013, 0.0027]}  # 10 layers
       RTMLI_3 :  {temperature: 267.791506, absorption: [0.0000, 0.0000, 0.0001, 0.0003, 0.0001, 0.0004, 0.0013, 0.0027, 0.0000, 0.0000, 0.0000, 0.0001, 0.0003, 0.0013, 0.0027]}  # 10 layers
