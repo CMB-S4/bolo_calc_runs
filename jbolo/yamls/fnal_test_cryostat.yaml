@@ -13,11 +13,11 @@ sources:
     site: 'Pole'
     pwv: 0      # microns, from 0 to 8000
     elevation: 50  # degrees, integer from 1 to 90
-optics_defaults: {temperature: 250.0, reflection: 0.0, scatter_frac: 0.0, spillover: 0.0, absorption: 0.0}
+optics_defaults: {temperature: 290.0, reflection: 0.0, scatter_frac: 0.0, spillover: 0.0, absorption: 0.0}
 optical_elements:
   # requires python 3.7 or later, because we assume dict{} is ordered.
   # This list of elements starts with the one closest to the sky, and moves toward the detector.
-  window:             {obj_type: Dielectric, reflection: 0.01, thickness: 0.00635, index: 1.525, loss_tangent: 3.0E-4}
+  window:             {obj_type: Dielectric, temperature: 290.0, reflection: 0.01, thickness: 0.00635, index: 1.525, loss_tangent: 3.0E-4}
   RTMLI_1 :           {obj_type: Bespoke, temperature: 283.164516, absorption: [0.0000, 0.0000, 0.0001, 0.0003, 0.0001, 0.0004, 0.0013, 0.0027, 0.0000, 0.0000, 0.0000, 0.0001, 0.0003, 0.0013, 0.0027]}  # 10 layers
   RTMLI_2 :           {obj_type: Bespoke, temperature: 275.797987, absorption: [0.0000, 0.0000, 0.0001, 0.0003, 0.0001, 0.0004, 0.0013, 0.0027, 0.0000, 0.0000, 0.0000, 0.0001, 0.0003, 0.0013, 0.0027]}  # 10 layers
   RTMLI_3 :           {obj_type: Bespoke, temperature: 267.791506, absorption: [0.0000, 0.0000, 0.0001, 0.0003, 0.0001, 0.0004, 0.0013, 0.0027, 0.0000, 0.0000, 0.0000, 0.0001, 0.0003, 0.0013, 0.0027]}  # 10 layers
