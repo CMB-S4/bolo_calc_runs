@@ -11,7 +11,7 @@ from bolo import Top
 
 """ Functions to drive bolo-calc, varying inputs and saving/plotting inputs and outputs """
 
-def vary_param_at_fixed_psat(xparam_name,xparam_vec,yparam_name,dd,psat,optical_element=None):
+def vary_param_at_fixed_psat(xparam_name, xparam_vec, yparam_name, dd, psat, optical_element=None):
     """ Run bolocalc and plot and save x vs y, for one telescope.
 
     version_date, channel_dict = vary_param_at_fixed_psat(x,y,yname,dd,psat)
