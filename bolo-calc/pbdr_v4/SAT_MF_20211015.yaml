@@ -33,11 +33,16 @@ instrument:
       alumina_filt: {obj_type: Dielectric, temperature: 50.0, reflection: 0.02, thickness: 0.010, index: 3.1, loss_tangent: 3.0E-4}
       # Nylon absorption values are in same order as channels are listed, below
       nylon_filt:   {temperature:  4.0, reflection: 0.01, absorption: [0.0056, 0.02223, 0.0075, 0.0265]}
-      lens1:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.055,  index: 1.52, loss_tangent: 1.0E-4}
-      #aperture:     {obj_type: ApertureStop,  temperature: 1.0} 
+      # Optical design Stark 11.5
+      # The the maximum thickness of the objective lens is 71mm.  The effective thickness for loss calculations will be
+      # less than this, as the field from each detector is spread over the aperture.  We use a guess of 80% of the maximum.
+      lens1:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.057,  index: 1.52, loss_tangent: 1.0E-4}
+      #aperture:     {obj_type: ApertureStop,  temperature: 1.0}
       # ApStop spillover values are in same order as channels are listed, below
-      ApStop:       {temperature: 1.0, spillover:[0.162, 0.065, 0.125, 0.079]} 
-      lens2:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.059,  index: 1.52, loss_tangent: 1.0E-4}
+      ApStop:       {temperature: 1.0, spillover:[0.162, 0.065, 0.125, 0.079]}
+      # The the maximum thickness of the objective lens is 53mm.  The effective thickness for loss calculations will be
+      # less than this, as individual detectors illuminate different portions of the lens.  We use a guess of 90% of the maximum.
+      lens2:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.048,  index: 1.52, loss_tangent: 1.0E-4}
       lowpass:      {temperature: 0.1, absorption: 0.01, reflection: 0.05}
   channel_default:
     band_response: 1.0
