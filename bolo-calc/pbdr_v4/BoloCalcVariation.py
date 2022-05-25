@@ -152,9 +152,9 @@ def vary_param_at_fixed_psat(xparam_name, xparam_vec, yparam_name, dd, psat, opt
         plt.subplot(2*n_chan,2,ii)
         plt.plot(xparam_vec,outputs[yparam_name][chan])
         plt.axvline(x = base_value[chan], color="red")
-        plt.ylabel(yparam_name)
+        plt.ylabel(f"{yparam_name}")
         if (ii >=2*n_chan-1):
-            plt.xlabel(xparam_name)
+            plt.xlabel(f"{xparam_name}")
         xmin, xmax, ymin, ymax = plt.axis()
         #plt.plot([base_value,base_value],[ymin,ymax],'r')
         xloc = xmin + 0.8*(xmax-xmin)
@@ -167,10 +167,10 @@ def vary_param_at_fixed_psat(xparam_name, xparam_vec, yparam_name, dd, psat, opt
         plt.subplot(2*n_chan,2,ii)
         plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
         plt.axvline(x = base_value[chan], color="red")
-        ylabelstring = yparam_name+'/NET_min'
+        ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
         plt.ylabel(ylabelstring)
         if (ii >=2*n_chan-1):
-            plt.xlabel(xparam_name)
+            plt.xlabel(f"{xparam_name}")
         xmin, xmax, ymin, ymax = plt.axis()
         #plt.plot([base_value,base_value],[ymin,ymax],'r')
         xloc = xmin + 0.8*(xmax-xmin)
@@ -196,7 +196,7 @@ def net_v_elevation(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -251,7 +251,7 @@ def net_v_elevation(xparam_vec, yaml_list, psat):
             plt.axvline(x = base_value[chan], color="red")
             plt.ylabel(yparam_name)
             if (ii >=2*n_chan-1):
-                plt.xlabel(xparam_name)
+                plt.xlabel(f"{xparam_name}")
             xmin, xmax, ymin, ymax = plt.axis()
             #plt.plot([base_value,base_value],[ymin,ymax],'r')
             xloc = xmin + 0.8*(xmax-xmin)
@@ -264,10 +264,10 @@ def net_v_elevation(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
-                plt.xlabel(xparam_name)
+                plt.xlabel(f"{xparam_name}")
             xmin, xmax, ymin, ymax = plt.axis()
             #plt.plot([base_value,base_value],[ymin,ymax],'r')
             xloc = xmin + 0.8*(xmax-xmin)
@@ -312,7 +312,7 @@ def popt_v_elevation(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -379,7 +379,7 @@ def popt_v_elevation(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -427,7 +427,7 @@ def net_v_pwv(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -493,7 +493,7 @@ def net_v_pwv(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -541,7 +541,7 @@ def popt_v_pwv(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -608,7 +608,7 @@ def popt_v_pwv(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -656,7 +656,7 @@ def net_v_tc(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -727,7 +727,7 @@ def net_v_tc(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -775,7 +775,7 @@ def net_v_beta(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -846,7 +846,7 @@ def net_v_beta(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -895,7 +895,7 @@ def net_v_AfTemp(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -966,7 +966,7 @@ def net_v_AfTemp(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -1015,7 +1015,7 @@ def net_v_AfLt(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -1086,7 +1086,7 @@ def net_v_AfLt(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -1134,7 +1134,7 @@ def net_v_DetEff(xparam_vec, yaml_list, psat):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -1205,7 +1205,7 @@ def net_v_DetEff(xparam_vec, yaml_list, psat):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
@@ -1255,7 +1255,7 @@ def net_v_PsatFac(xparam_vec, yaml_list):
         dd = yaml.safe_load(open(yaml_file))
         version_date = str(dd['version']['date'])
         version_telescope = str(dd['version']['name'])
-        dd['sim_config']['config_dir'] = '../../bolo-calc/config'
+        dd['sim_config']['config_dir'] = '../scripts'
         dd['version']['yaml']=yaml_file
         del dd['version']
         ch_names = list(dd['instrument']['camera_config']['elements']['cam_1']['chan_config']['elements'].keys())
@@ -1325,7 +1325,7 @@ def net_v_PsatFac(xparam_vec, yaml_list):
             plt.subplot(2*n_chan,2,ii)
             plt.plot(xparam_vec,outputs[yparam_name][chan]/np.min(outputs[yparam_name][chan]))
             plt.axvline(x = base_value[chan], color="red")
-            ylabelstring = yparam_name+'/NET_min'
+            ylabelstring = f"{yparam_name}/{yparam_name}$_{{min}}$"
             plt.ylabel(ylabelstring)
             if (ii >=2*n_chan-1):
                 plt.xlabel(xparam_name)
