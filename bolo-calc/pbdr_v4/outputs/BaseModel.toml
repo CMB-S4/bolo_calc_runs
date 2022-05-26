@@ -1,8 +1,8 @@
-runtime = "2022/05/26 09:27:57"
+runtime = "2022/05/26 13:40:23"
 input_id = "20220524"
 variation = "BaseModel"
 
-["SAT_LF_20211015.yaml".defaults]
+["SAT_LF_20220524.yaml".defaults]
 Yield = 0.8
 Tc = 0.16
 waist_factor = 3.0
@@ -11,7 +11,7 @@ site = "Pole"
 elevation = 50.0
 pwv = 321.0
 
-["SAT_LF_20211015.yaml".LF_1]
+["SAT_LF_20220524.yaml".LF_1]
 popt = 0.6204386593664958
 psat = 1.551
 net = 171.21354686641482
@@ -27,7 +27,7 @@ fractional_bandwidth = 0.33
 band_lowedge = 21.50125
 band_highedge = 29.99875
 
-["SAT_LF_20211015.yaml".LF_2]
+["SAT_LF_20220524.yaml".LF_2]
 popt = 2.4589303786248804
 psat = 6.147
 net = 215.60983385458678
@@ -43,7 +43,7 @@ fractional_bandwidth = 0.452
 band_lowedge = 29.9925
 band_highedge = 47.5075
 
-["SAT_MF_20211015.yaml".defaults]
+["SAT_MF_20220524.yaml".defaults]
 Yield = 0.8
 Tc = 0.16
 waist_factor = 3.0
@@ -52,7 +52,7 @@ site = "Pole"
 elevation = 50.0
 pwv = 321.0
 
-["SAT_MF_20211015.yaml".MF1_1]
+["SAT_MF_20220524.yaml".MF1_1]
 popt = 3.2488412414810703
 psat = 8.21
 net = 313.5295309819176
@@ -68,7 +68,7 @@ fractional_bandwidth = 0.24
 band_lowedge = 74.8
 band_highedge = 95.2
 
-["SAT_MF_20211015.yaml".MF1_2]
+["SAT_MF_20220524.yaml".MF1_2]
 popt = 5.146932805163232
 psat = 13.295
 net = 335.03860142615457
@@ -84,7 +84,7 @@ fractional_bandwidth = 0.22
 band_lowedge = 129.05
 band_highedge = 160.95
 
-["SAT_MF_20211015.yaml".MF2_1]
+["SAT_MF_20220524.yaml".MF2_1]
 popt = 3.318779323203893
 psat = 8.21
 net = 274.72563530395763
@@ -100,7 +100,7 @@ fractional_bandwidth = 0.24
 band_lowedge = 83.6
 band_highedge = 106.4
 
-["SAT_MF_20211015.yaml".MF2_2]
+["SAT_MF_20220524.yaml".MF2_2]
 popt = 5.489262587882222
 psat = 13.295
 net = 359.3924230384083
