@@ -1,4 +1,4 @@
-version: {date: 20211015, name: 'SAT_LF'}
+version: {date: 20220524, name: 'SAT_MF'}
 
 sim_config: {nsky_sim: 0, ndet_sim: 0, save_summary: True, save_sim: True, config_dir: config, freq_resol: 0.1}
 
@@ -29,14 +29,17 @@ instrument:
       baffle: {absorption: 0.01}
       window:    {obj_type: Dielectric, reflection: 0.01, thickness: 0.03, index: 1.525, loss_tangent: 3.0E-4}
       # IR shaders:  emissivity proportional to frequency, pinned to 90GHz value derived from Bicep3
-      RTMLI_10: {temperature: 150.0, absorption: [0.00399, 0.00399]}
+      RTMLI_10: {temperature: 150.0, absorption: [0.00399, 0.00399, 0.00399, 0.00399] }
       alumina_filt: {obj_type: Dielectric, temperature: 50.0, reflection: 0.02, thickness: 0.010, index: 3.1, loss_tangent: 3.0E-4}
-      nylon_filt:   {temperature:  4.0, reflection: 0.01, absorption: [0.0003, 0.0007]}
+      # Nylon absorption values are in same order as channels are listed, below
+      nylon_filt:   {temperature:  4.0, reflection: 0.01, absorption: [0.0056, 0.02223, 0.0075, 0.0265]}
       # Optical design Stark 11.5
       # The the maximum thickness of the objective lens is 71mm.  The effective thickness for loss calculations will be
       # less than this, as the field from each detector is spread over the aperture.  We use a guess of 80% of the maximum.
       lens1:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.057,  index: 1.52, loss_tangent: 1.0E-4}
-      ApStop:       {temperature: 1.0, spillover:[0.13, 0.07]}
+      #aperture:     {obj_type: ApertureStop,  temperature: 1.0}
+      # ApStop spillover values are in same order as channels are listed, below
+      ApStop:       {temperature: 1.0, spillover:[0.162, 0.065, 0.125, 0.079]}
       # The the maximum thickness of the objective lens is 53mm.  The effective thickness for loss calculations will be
       # less than this, as individual detectors illuminate different portions of the lens.  We use a guess of 90% of the maximum.
       lens2:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.048,  index: 1.52, loss_tangent: 1.0E-4}
@@ -58,11 +61,13 @@ instrument:
     bolo_resistance: 0.008  # as biased in operation, ie less than R_normal
     read_frac: 0.05
   camera_config:
-    default: {boresite_elevation: 0.0, optical_coupling: 1.0, f_number: 1.55, bath_temperature: 0.1}
+    default: {boresite_elevation: 0.0, optical_coupling: 1.0, f_number: 1.45, bath_temperature: 0.1}
     elements:
       cam_1:
         skip_optical_elements: []
         chan_config:
           elements:
-            LF_1:  {band_center: 25.75, fractional_bandwidth: 0.330, pixel_size: 30.95, num_det_per_water:  24, det_eff: 0.63}
-            LF_2:  {band_center: 38.75, fractional_bandwidth: 0.452, pixel_size: 30.95, num_det_per_water:  24, det_eff: 0.65}
+            MF1_1: {band_center: 85.0,  fractional_bandwidth: 0.24,  pixel_size: 9.35,  num_det_per_water: 294, det_eff: 0.65}
+            MF1_2: {band_center: 145.0, fractional_bandwidth: 0.22,  pixel_size: 9.35,  num_det_per_water: 294, det_eff: 0.68}
+            MF2_1: {band_center: 95.0,  fractional_bandwidth: 0.24,  pixel_size: 8.79,  num_det_per_water: 338, det_eff: 0.65}
+            MF2_2: {band_center: 155.0, fractional_bandwidth: 0.22,  pixel_size: 8.79,  num_det_per_water: 338, det_eff: 0.68}
