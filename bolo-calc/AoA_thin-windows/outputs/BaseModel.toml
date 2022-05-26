@@ -1,0 +1,718 @@
+runtime = "2022/05/26 17:15:45"
+input_id = "20220524"
+variation = "BaseModel"
+
+["SAT_LF_20220526.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Pole"
+elevation = 50.0
+pwv = 321.0
+
+["SAT_LF_20220526.yaml".LF_1]
+popt = 0.5198229760064338
+psat = 1.3
+net = 147.4536699678197
+netwafer = 33.65154217845704
+effic = 0.4547658248144099
+nep_photon = 9.024474557991201
+nep_phonon = 5.1980295679774775
+nep_readout = 3.334249072105046
+Gdyn = 36.47005750135157
+corr_fact = 1.036581160661388
+bandcenter = 25.75
+fractional_bandwidth = 0.33
+band_lowedge = 21.50125
+band_highedge = 29.99875
+
+["SAT_LF_20220526.yaml".LF_2]
+popt = 2.129102490267562
+psat = 5.323
+net = 190.0470850254625
+netwafer = 43.37211477356169
+effic = 0.4798113083809886
+nep_photon = 26.557416945716287
+nep_phonon = 10.51829392156904
+nep_readout = 9.14510346795138
+Gdyn = 149.33085852284185
+corr_fact = 1.0071015451921028
+bandcenter = 38.75
+fractional_bandwidth = 0.452
+band_lowedge = 29.9925
+band_highedge = 47.5075
+
+["SAT_MF_20220526.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Pole"
+elevation = 50.0
+pwv = 321.0
+
+["SAT_MF_20220526.yaml".MF1_1]
+popt = 2.522700054937885
+psat = 6.113
+net = 250.58891643111784
+netwafer = 16.339666927392884
+effic = 0.4136652642474314
+nep_photon = 30.69742461312642
+nep_phonon = 11.271825772675937
+nep_readout = 10.469577749275972
+Gdyn = 171.49343192750933
+corr_fact = 1.0313836754067982
+bandcenter = 85.0
+fractional_bandwidth = 0.24
+band_lowedge = 74.8
+band_highedge = 95.2
+
+["SAT_MF_20220526.yaml".MF1_2]
+popt = 2.966022560870676
+psat = 7.5360000000000005
+net = 213.27634775616616
+netwafer = 13.906698410520063
+effic = 0.4744300299117225
+nep_photon = 33.55388423541209
+nep_phonon = 12.515191932262697
+nep_readout = 11.465406690538412
+Gdyn = 211.41411794629644
+corr_fact = 1.0022765666702007
+bandcenter = 145.0
+fractional_bandwidth = 0.22
+band_lowedge = 129.05
+band_highedge = 160.95
+
+["SAT_MF_20220526.yaml".MF2_1]
+popt = 2.367419067264809
+psat = 6.113
+net = 205.73263824187578
+netwafer = 12.511225497688203
+effic = 0.43666486292389484
+nep_photon = 28.132214695214362
+nep_phonon = 11.271825772675937
+nep_readout = 9.702769959680982
+Gdyn = 171.49343192750933
+corr_fact = 1.0200336904878198
+bandcenter = 95.0
+fractional_bandwidth = 0.24
+band_lowedge = 83.6
+band_highedge = 106.4
+
+["SAT_MF_20220526.yaml".MF2_2]
+popt = 3.0625827141826476
+psat = 7.5360000000000005
+net = 223.95619646873675
+netwafer = 13.61945532594936
+effic = 0.4632223862696634
+nep_photon = 34.43482032437395
+nep_phonon = 12.515191932262697
+nep_readout = 11.730074815917089
+Gdyn = 211.41411794629644
+corr_fact = 1.0021587070150602
+bandcenter = 155.0
+fractional_bandwidth = 0.22
+band_lowedge = 137.95
+band_highedge = 172.05
+
+["SAT_HF_20220526.yaml".defaults]
+Yield = 0.8
+Tc = 0.16
+waist_factor = 3.0
+read_frac = 0.05
+site = "Pole"
+elevation = 50.0
+pwv = 321.0
+
+["SAT_HF_20220526.yaml".HF_1]
+popt = 6.202343839475736
+psat = 15.506000000000002
+net = 459.67157758761266
+netwafer = 16.780358640086675
+effic = 0.38973549936900687
+nep_photon = 56.837430396823564
+nep_phonon = 17.952170291052735
+nep_readout = 19.082959047484067
+Gdyn = 435.00362431996723
+corr_fact = 1.0056538194910032
+bandcenter = 227.0
+fractional_bandwidth = 0.256
+band_lowedge = 197.944
+band_highedge = 256.056
+
+["SAT_HF_20220526.yaml".HF_2]
+popt = 8.064454998674288
+psat = 20.161
+net = 1126.742077960393
+netwafer = 41.13183647829134
+effic = 0.35795559058412857
+nep_photon = 72.90496203732015
+nep_phonon = 20.47024799979572
+nep_readout = 24.243594321814456
+Gdyn = 565.5944840651914
+corr_fact = 1.00093235342694
+bandcenter = 285.5
+fractional_bandwidth = 0.207
+band_lowedge = 255.95075
+band_highedge = 315.04925
+
+["SAT_LF_20220526.yaml".LF_1.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.11492820524768763
+elem_power_from_sky_mean = 0.0
+
+["SAT_LF_20220526.yaml".LF_1.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 4.2279542310596077e-17
+elem_power_from_sky_mean = 9.300450289992005e-17
+
+["SAT_LF_20220526.yaml".LF_1.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 4.461159061563834e-12
+elem_power_from_sky_mean = 9.802741156029342e-12
+
+["SAT_LF_20220526.yaml".LF_1.optics.atmosphere]
+elem_effic_mean = 0.9839788328922576
+elem_power_to_det_mean = 0.1962565144760821
+elem_power_from_sky_mean = 0.4246866653914209
+
+["SAT_LF_20220526.yaml".LF_1.optics.baffle]
+elem_effic_mean = 0.9900000000000009
+elem_power_to_det_mean = 0.14917791835522756
+elem_power_from_sky_mean = 0.7322575442602343
+
+["SAT_LF_20220526.yaml".LF_1.optics.window]
+elem_effic_mean = 0.9895112525670474
+elem_power_to_det_mean = 0.007441669995524475
+elem_power_from_sky_mean = 0.7405525536708778
+
+["SAT_LF_20220526.yaml".LF_1.optics.RTMLI_10]
+elem_effic_mean = 0.9960100000000014
+elem_power_to_det_mean = 0.03312186412234843
+elem_power_from_sky_mean = 0.8019751987877535
+
+["SAT_LF_20220526.yaml".LF_1.optics.alumina_filt]
+elem_effic_mean = 0.9750937898974739
+elem_power_to_det_mean = 0.014087172567808766
+elem_power_from_sky_mean = 0.827661218118418
+
+["SAT_LF_20220526.yaml".LF_1.optics.nylon_filt]
+elem_effic_mean = 0.9897030000000013
+elem_power_to_det_mean = 5.897877980019029e-5
+elem_power_from_sky_mean = 0.8071481382769956
+
+["SAT_LF_20220526.yaml".LF_1.optics.lens1]
+elem_effic_mean = 0.9754285204279718
+elem_power_to_det_mean = 0.000138736507520086
+elem_power_from_sky_mean = 0.7991098096895228
+
+["SAT_LF_20220526.yaml".LF_1.optics.ApStop]
+elem_effic_mean = 0.8699999999999991
+elem_power_to_det_mean = 0.004474287791867419
+elem_power_from_sky_mean = 0.7870057809016217
+
+["SAT_LF_20220526.yaml".LF_1.optics.lens2]
+elem_effic_mean = 0.9761488998301033
+elem_power_to_det_mean = 0.00013762154596132627
+elem_power_from_sky_mean = 0.6848971014753896
+
+["SAT_LF_20220526.yaml".LF_1.optics.lowpass]
+elem_effic_mean = 0.9405
+elem_power_to_det_mean = 6.612144468996746e-9
+elem_power_from_sky_mean = 0.6685514505751315
+
+["SAT_LF_20220526.yaml".LF_1.optics.detector]
+elem_effic_mean = 0.6300000000000001
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 0.6287726392659114
+
+["SAT_LF_20220526.yaml".LF_2.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.2210022181556197
+elem_power_from_sky_mean = 0.0
+
+["SAT_LF_20220526.yaml".LF_2.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 1.6644571403855152e-16
+elem_power_from_sky_mean = 3.490217001792531e-16
+
+["SAT_LF_20220526.yaml".LF_2.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 3.0244207872187463e-12
+elem_power_from_sky_mean = 6.23105331726092e-12
+
+["SAT_LF_20220526.yaml".LF_2.optics.atmosphere]
+elem_effic_mean = 0.9483466513516917
+elem_power_to_det_mean = 1.4200940638068498
+elem_power_from_sky_mean = 2.811238630738357
+
+["SAT_LF_20220526.yaml".LF_2.optics.baffle]
+elem_effic_mean = 0.989999999999998
+elem_power_to_det_mean = 0.33619708317639246
+elem_power_from_sky_mean = 3.2420203887257184
+
+["SAT_LF_20220526.yaml".LF_2.optics.window]
+elem_effic_mean = 0.9892646009574056
+elem_power_to_det_mean = 0.025234361731780664
+elem_power_from_sky_mean = 3.2579793543670514
+
+["SAT_LF_20220526.yaml".LF_2.optics.RTMLI_10]
+elem_effic_mean = 0.9960099999999976
+elem_power_to_det_mean = 0.07459413482968198
+elem_power_from_sky_mean = 3.3651639686632655
+
+["SAT_LF_20220526.yaml".LF_2.optics.alumina_filt]
+elem_effic_mean = 0.9726265113494645
+elem_power_to_det_mean = 0.047585209370127175
+elem_power_from_sky_mean = 3.440640632221761
+
+["SAT_LF_20220526.yaml".LF_2.optics.nylon_filt]
+elem_effic_mean = 0.989306999999998
+elem_power_to_det_mean = 0.0002867729968673285
+elem_power_from_sky_mean = 3.3457361215237227
+
+["SAT_LF_20220526.yaml".LF_2.optics.lens1]
+elem_effic_mean = 0.9731289607115077
+elem_power_to_det_mean = 0.00031878216582501934
+elem_power_from_sky_mean = 3.310529553629862
+
+["SAT_LF_20220526.yaml".LF_2.optics.ApStop]
+elem_effic_mean = 0.9300000000000008
+elem_power_to_det_mean = 0.0034934105583683244
+elem_power_from_sky_mean = 3.226171875018441
+
+["SAT_LF_20220526.yaml".LF_2.optics.lens2]
+elem_effic_mean = 0.9742105956051704
+elem_power_to_det_mean = 0.00029645331175863704
+elem_power_from_sky_mean = 3.0007908339604765
+
+["SAT_LF_20220526.yaml".LF_2.optics.lowpass]
+elem_effic_mean = 0.9404999999999981
+elem_power_to_det_mean = 1.6126614018598114e-10
+elem_power_from_sky_mean = 2.9225593324804606
+
+["SAT_LF_20220526.yaml".LF_2.optics.detector]
+elem_effic_mean = 0.6500000000000016
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 2.7486670521978738
+
+["SAT_MF_20220526.yaml".MF1_1.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.137085560943348
+elem_power_from_sky_mean = 0.0
+
+["SAT_MF_20220526.yaml".MF1_1.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 5.144685120343637e-16
+elem_power_from_sky_mean = 1.241422223238937e-15
+
+["SAT_MF_20220526.yaml".MF1_1.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 2.6254659591278436e-13
+elem_power_from_sky_mean = 6.385859567089614e-13
+
+["SAT_MF_20220526.yaml".MF1_1.optics.atmosphere]
+elem_effic_mean = 0.9354148607843137
+elem_power_to_det_mean = 1.8045818873735777
+elem_power_from_sky_mean = 4.076136258289139
+
+["SAT_MF_20220526.yaml".MF1_1.optics.baffle]
+elem_effic_mean = 0.99
+elem_power_to_det_mean = 0.3409206161480508
+elem_power_from_sky_mean = 4.495169585139189
+
+["SAT_MF_20220526.yaml".MF1_1.optics.window]
+elem_effic_mean = 0.9883875777951296
+elem_power_to_det_mean = 0.05616425879020632
+elem_power_from_sky_mean = 4.573266001143511
+
+["SAT_MF_20220526.yaml".MF1_1.optics.RTMLI_10]
+elem_effic_mean = 0.99601
+elem_power_to_det_mean = 0.07545606072257593
+elem_power_from_sky_mean = 4.684631064868802
+
+["SAT_MF_20220526.yaml".MF1_1.optics.alumina_filt]
+elem_effic_mean = 0.9638980922470781
+elem_power_to_det_mean = 0.10451017714539092
+elem_power_from_sky_mean = 4.887076235046447
+
+["SAT_MF_20220526.yaml".MF1_1.optics.nylon_filt]
+elem_effic_mean = 0.984456
+elem_power_to_det_mean = 0.0017368404478780167
+elem_power_from_sky_mean = 4.715314047031173
+
+["SAT_MF_20220526.yaml".MF1_1.optics.lens1]
+elem_effic_mean = 0.964990737046674
+elem_power_to_det_mean = 0.00015112351781404378
+elem_power_from_sky_mean = 4.642319379311013
+
+["SAT_MF_20220526.yaml".MF1_1.optics.ApStop]
+elem_effic_mean = 0.838
+elem_power_to_det_mean = 0.001936371452827458
+elem_power_from_sky_mean = 4.483996552138529
+
+["SAT_MF_20220526.yaml".MF1_1.optics.lens2]
+elem_effic_mean = 0.9673451734541129
+elem_power_to_det_mean = 0.0001571583959523795
+elem_power_from_sky_mean = 3.757804542313251
+
+["SAT_MF_20220526.yaml".MF1_1.optics.lowpass]
+elem_effic_mean = 0.9405
+elem_power_to_det_mean = 1.7692497521119675e-19
+elem_power_from_sky_mean = 3.635809278110868
+
+["SAT_MF_20220526.yaml".MF1_1.optics.detector]
+elem_effic_mean = 0.65
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 3.4194786260632712
+
+["SAT_MF_20220526.yaml".MF1_2.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.12330728317431963
+elem_power_from_sky_mean = 0.0
+
+["SAT_MF_20220526.yaml".MF1_2.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 1.8997934988378984e-15
+elem_power_from_sky_mean = 4.00418425623575e-15
+
+["SAT_MF_20220526.yaml".MF1_2.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 9.478731286018228e-14
+elem_power_from_sky_mean = 2.0383504417424254e-13
+
+["SAT_MF_20220526.yaml".MF1_2.optics.atmosphere]
+elem_effic_mean = 0.9659651255094044
+elem_power_to_det_mean = 1.6473680879269514
+elem_power_from_sky_mean = 3.3513727388103325
+
+["SAT_MF_20220526.yaml".MF1_2.optics.baffle]
+elem_effic_mean = 0.99
+elem_power_to_det_mean = 0.5889301205288905
+elem_power_from_sky_mean = 4.378894478959794
+
+["SAT_MF_20220526.yaml".MF1_2.optics.window]
+elem_effic_mean = 0.9872509834747717
+elem_power_to_det_mean = 0.1655850837988279
+elem_power_from_sky_mean = 4.661414559536702
+
+["SAT_MF_20220526.yaml".MF1_2.optics.RTMLI_10]
+elem_effic_mean = 0.99601
+elem_power_to_det_mean = 0.1299298644418137
+elem_power_from_sky_mean = 4.856301496662398
+
+["SAT_MF_20220526.yaml".MF1_2.optics.alumina_filt]
+elem_effic_mean = 0.9526920485527272
+elem_power_to_det_mean = 0.30273408190145323
+elem_power_from_sky_mean = 5.406382592281814
+
+["SAT_MF_20220526.yaml".MF1_2.optics.nylon_filt]
+elem_effic_mean = 0.9679923
+elem_power_to_det_mean = 0.007955413860287485
+elem_power_from_sky_mean = 5.165179615247335
+
+["SAT_MF_20220526.yaml".MF1_2.optics.lens1]
+elem_effic_mean = 0.954534978076424
+elem_power_to_det_mean = 4.543406671287456e-5
+elem_power_from_sky_mean = 4.99993079440638
+
+["SAT_MF_20220526.yaml".MF1_2.optics.ApStop]
+elem_effic_mean = 0.935
+elem_power_to_det_mean = 0.00012443174297583343
+elem_power_from_sky_mean = 4.773430441740237
+
+["SAT_MF_20220526.yaml".MF1_2.optics.lens2]
+elem_effic_mean = 0.9585111541181772
+elem_power_to_det_mean = 4.2759428346779774e-5
+elem_power_from_sky_mean = 4.4632199768112555
+
+["SAT_MF_20220526.yaml".MF1_2.optics.lowpass]
+elem_effic_mean = 0.9405
+elem_power_to_det_mean = 1.5545343245776675e-30
+elem_power_from_sky_mean = 4.278530632215163
+
+["SAT_MF_20220526.yaml".MF1_2.optics.detector]
+elem_effic_mean = 0.68
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 4.02395805959836
+
+["SAT_MF_20220526.yaml".MF2_1.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.1451030494109709
+elem_power_from_sky_mean = 0.0
+
+["SAT_MF_20220526.yaml".MF2_1.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 7.06677154429609e-16
+elem_power_from_sky_mean = 1.61867301251183e-15
+
+["SAT_MF_20220526.yaml".MF2_1.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 2.228659642664501e-13
+elem_power_from_sky_mean = 5.118472529843581e-13
+
+["SAT_MF_20220526.yaml".MF2_1.optics.atmosphere]
+elem_effic_mean = 0.9526277763157894
+elem_power_to_det_mean = 1.529055678006121
+elem_power_from_sky_mean = 3.335372439868789
+
+["SAT_MF_20220526.yaml".MF2_1.optics.baffle]
+elem_effic_mean = 0.99
+elem_power_to_det_mean = 0.3945725698887584
+elem_power_from_sky_mean = 3.987512184344752
+
+["SAT_MF_20220526.yaml".MF2_1.optics.window]
+elem_effic_mean = 0.9881980546310497
+elem_power_to_det_mean = 0.07265523099015334
+elem_power_from_sky_mean = 4.101189917272162
+
+["SAT_MF_20220526.yaml".MF2_1.optics.RTMLI_10]
+elem_effic_mean = 0.99601
+elem_power_to_det_mean = 0.0872842323394073
+elem_power_from_sky_mean = 4.236154075065555
+
+["SAT_MF_20220526.yaml".MF2_1.optics.alumina_filt]
+elem_effic_mean = 0.9620213115897785
+elem_power_to_det_mean = 0.13480141538229418
+elem_power_from_sky_mean = 4.4938655715359355
+
+["SAT_MF_20220526.yaml".MF2_1.optics.nylon_filt]
+elem_effic_mean = 0.9825750000000002
+elem_power_to_det_mean = 0.0025216849239333736
+elem_power_from_sky_mean = 4.328152098123154
+
+["SAT_MF_20220526.yaml".MF2_1.optics.lens1]
+elem_effic_mean = 0.963240195309819
+elem_power_to_det_mean = 0.0001357945719933385
+elem_power_from_sky_mean = 4.252992257287599
+
+["SAT_MF_20220526.yaml".MF2_1.optics.ApStop]
+elem_effic_mean = 0.875
+elem_power_to_det_mean = 0.0011539466007533085
+elem_power_from_sky_mean = 4.098615960673919
+
+["SAT_MF_20220526.yaml".MF2_1.optics.lens2]
+elem_effic_mean = 0.965867206281993
+elem_power_to_det_mean = 0.00013546515019997608
+elem_power_from_sky_mean = 3.5864828591919777
+
+["SAT_MF_20220526.yaml".MF2_1.optics.lowpass]
+elem_effic_mean = 0.9405
+elem_power_to_det_mean = 2.8882226641758637e-21
+elem_power_from_sky_mean = 3.46412813421019
+
+["SAT_MF_20220526.yaml".MF2_1.optics.detector]
+elem_effic_mean = 0.65
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 3.258012510224684
+
+["SAT_MF_20220526.yaml".MF2_2.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.1140448146001862
+elem_power_from_sky_mean = 0.0
+
+["SAT_MF_20220526.yaml".MF2_2.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 2.161608146246925e-15
+elem_power_from_sky_mean = 4.669592912292079e-15
+
+["SAT_MF_20220526.yaml".MF2_2.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 8.112732134104877e-14
+elem_power_from_sky_mean = 1.7954757713722409e-13
+
+["SAT_MF_20220526.yaml".MF2_2.optics.atmosphere]
+elem_effic_mean = 0.9669287996700879
+elem_power_to_det_mean = 1.6698406847374025
+elem_power_from_sky_mean = 3.487235330629191
+
+["SAT_MF_20220526.yaml".MF2_2.optics.baffle]
+elem_effic_mean = 0.99
+elem_power_to_det_mean = 0.6134933706138768
+elem_power_from_sky_mean = 4.59431593995236
+
+["SAT_MF_20220526.yaml".MF2_2.optics.window]
+elem_effic_mean = 0.9870616788804638
+elem_power_to_det_mean = 0.18440031041305663
+elem_power_from_sky_mean = 4.920875736047116
+
+["SAT_MF_20220526.yaml".MF2_2.optics.RTMLI_10]
+elem_effic_mean = 0.99601
+elem_power_to_det_mean = 0.13527627454237565
+elem_power_from_sky_mean = 5.128434474581009
+
+["SAT_MF_20220526.yaml".MF2_2.optics.alumina_filt]
+elem_effic_mean = 0.9508371493823903
+elem_power_to_det_mean = 0.33613475677558974
+elem_power_from_sky_mean = 5.754851782826027
+
+["SAT_MF_20220526.yaml".MF2_2.optics.nylon_filt]
+elem_effic_mean = 0.963765
+elem_power_to_det_mean = 0.009217847185076728
+elem_power_from_sky_mean = 5.487666245379956
+
+["SAT_MF_20220526.yaml".MF2_2.optics.lens1]
+elem_effic_mean = 0.9528034579628321
+elem_power_to_det_mean = 3.4068486104533504e-5
+elem_power_from_sky_mean = 5.288878875073921
+
+["SAT_MF_20220526.yaml".MF2_2.optics.ApStop]
+elem_effic_mean = 0.921
+elem_power_to_det_mean = 0.00010798467053081983
+elem_power_from_sky_mean = 5.038956663685349
+
+["SAT_MF_20220526.yaml".MF2_2.optics.lens2]
+elem_effic_mean = 0.9570467227971952
+elem_power_to_det_mean = 3.26021583648222e-5
+elem_power_from_sky_mean = 4.640926037543249
+
+["SAT_MF_20220526.yaml".MF2_2.optics.lowpass]
+elem_effic_mean = 0.9405
+elem_power_to_det_mean = 2.3175610582097604e-32
+elem_power_from_sky_mean = 4.441244129264871
+
+["SAT_MF_20220526.yaml".MF2_2.optics.detector]
+elem_effic_mean = 0.68
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 4.176990103573611
+
+["SAT_HF_20220526.yaml".HF_1.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.0654620897105252
+elem_power_from_sky_mean = 0.0
+
+["SAT_HF_20220526.yaml".HF_1.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 4.990484336357296e-15
+elem_power_from_sky_mean = 1.2824445337370804e-14
+
+["SAT_HF_20220526.yaml".HF_1.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 3.74415388028833e-14
+elem_power_from_sky_mean = 1.0853036648153524e-13
+
+["SAT_HF_20220526.yaml".HF_1.optics.atmosphere]
+elem_effic_mean = 0.9464398800370454
+elem_power_to_det_mean = 3.9139851351311
+elem_power_from_sky_mean = 9.517357570465178
+
+["SAT_HF_20220526.yaml".HF_1.optics.baffle]
+elem_effic_mean = 0.9899999999999914
+elem_power_to_det_mean = 0.892929726482801
+elem_power_from_sky_mean = 11.009161306799017
+
+["SAT_HF_20220526.yaml".HF_1.optics.window]
+elem_effic_mean = 0.985699774576517
+elem_power_to_det_mean = 0.39318335388141773
+elem_power_from_sky_mean = 11.822163299295974
+
+["SAT_HF_20220526.yaml".HF_1.optics.RTMLI_10]
+elem_effic_mean = 0.9956499999999945
+elem_power_to_det_mean = 0.21390221460363903
+elem_power_from_sky_mean = 12.150234472156164
+
+["SAT_HF_20220526.yaml".HF_1.optics.alumina_filt]
+elem_effic_mean = 0.9375897936799006
+elem_power_to_det_mean = 0.7016206543600143
+elem_power_from_sky_mean = 13.643451018194707
+
+["SAT_HF_20220526.yaml".HF_1.optics.nylon_filt]
+elem_effic_mean = 0.9208980000000017
+elem_power_to_det_mean = 0.02123664176528632
+elem_power_from_sky_mean = 12.828723843666397
+
+["SAT_HF_20220526.yaml".HF_1.optics.lens1]
+elem_effic_mean = 0.9404303977298041
+elem_power_to_det_mean = 4.188884841290197e-6
+elem_power_from_sky_mean = 11.813953509936104
+
+["SAT_HF_20220526.yaml".HF_1.optics.ApStop]
+elem_effic_mean = 0.8750000000000019
+elem_power_to_det_mean = 1.556913533678103e-5
+elem_power_from_sky_mean = 11.10729438062464
+
+["SAT_HF_20220526.yaml".HF_1.optics.lens2]
+elem_effic_mean = 0.946569734612986
+elem_power_to_det_mean = 4.26552073323377e-6
+elem_power_from_sky_mean = 9.718888506111684
+
+["SAT_HF_20220526.yaml".HF_1.optics.lowpass]
+elem_effic_mean = 0.9405000000000102
+elem_power_to_det_mean = 1.1954367078418617e-44
+elem_power_from_sky_mean = 9.197633972432321
+
+["SAT_HF_20220526.yaml".HF_1.optics.detector]
+elem_effic_mean = 0.670000000000006
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 8.6503747510726
+
+["SAT_HF_20220526.yaml".HF_2.optics.cmb]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 0.027269353715990065
+elem_power_from_sky_mean = 0.0
+
+["SAT_HF_20220526.yaml".HF_2.optics.dust]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 6.0761297147328e-15
+elem_power_from_sky_mean = 1.6999791112780288e-14
+
+["SAT_HF_20220526.yaml".HF_2.optics.synchrotron]
+elem_effic_mean = 1.0
+elem_power_to_det_mean = 1.7380908259902564e-14
+elem_power_from_sky_mean = 6.536293781545307e-14
+
+["SAT_HF_20220526.yaml".HF_2.optics.atmosphere]
+elem_effic_mean = 0.9218305635952218
+elem_power_to_det_mean = 5.46929774071369
+elem_power_from_sky_mean = 14.10700100458683
+
+["SAT_HF_20220526.yaml".HF_2.optics.baffle]
+elem_effic_mean = 0.9899999999999946
+elem_power_to_det_mean = 0.8518415118851766
+elem_power_from_sky_mean = 14.955434923102114
+
+["SAT_HF_20220526.yaml".HF_2.optics.window]
+elem_effic_mean = 0.9845945856821702
+elem_power_to_det_mean = 0.4720855216183431
+elem_power_from_sky_mean = 15.979838520874058
+
+["SAT_HF_20220526.yaml".HF_2.optics.RTMLI_10]
+elem_effic_mean = 0.991699999999989
+elem_power_to_det_mean = 0.38966317988593824
+elem_power_from_sky_mean = 16.688247919661286
+
+["SAT_HF_20220526.yaml".HF_2.optics.alumina_filt]
+elem_effic_mean = 0.9269598671677649
+elem_power_to_det_mean = 0.8309593593130313
+elem_power_from_sky_mean = 18.452132855335314
+
+["SAT_HF_20220526.yaml".HF_2.optics.nylon_filt]
+elem_effic_mean = 0.8682299999999922
+elem_power_to_det_mean = 0.023336729582911567
+elem_power_from_sky_mean = 17.141893192425364
+
+["SAT_HF_20220526.yaml".HF_2.optics.lens1]
+elem_effic_mean = 0.9304935409035613
+elem_power_to_det_mean = 4.2772003374547945e-7
+elem_power_from_sky_mean = 14.883106617718934
+
+["SAT_HF_20220526.yaml".HF_2.optics.ApStop]
+elem_effic_mean = 0.9210000000000026
+elem_power_to_det_mean = 7.564357653050747e-7
+elem_power_from_sky_mean = 13.844412363276394
+
+["SAT_HF_20220526.yaml".HF_2.optics.lens2]
+elem_effic_mean = 0.938140153295315
+elem_power_to_det_mean = 4.178033828520193e-7
+elem_power_from_sky_mean = 12.750704406487852
+
+["SAT_HF_20220526.yaml".HF_2.optics.lowpass]
+elem_effic_mean = 0.9405000000000019
+elem_power_to_det_mean = 2.7449617792851584e-45
+elem_power_from_sky_mean = 11.958972212428025
+
+["SAT_HF_20220526.yaml".HF_2.optics.detector]
+elem_effic_mean = 0.6600000000000009
+elem_power_to_det_mean = 0.0
+elem_power_from_sky_mean = 11.247413365788558
