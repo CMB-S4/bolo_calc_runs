@@ -1,4 +1,4 @@
-version: {date: 20220524, name: 'SAT_HF'}
+version: {date: 20220526, name: 'SAT_HF'}
 
 sim_config: {nsky_sim: 0, ndet_sim: 0, save_summary: True, save_sim: True, config_dir: config, freq_resol: 0.1}
 

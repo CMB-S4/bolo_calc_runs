@@ -1,5 +1,5 @@
-runtime = "2022/05/26 17:41:47"
-input_id = "20220526"
+runtime = "2022/05/26 17:15:45"
+input_id = "20220524"
 variation = "BaseModel"
 
 ["SAT_LF_20220526.yaml".defaults]

@@ -27,7 +27,7 @@ instrument:
     default: {temperature: 273.0, reflection: 0.0, scatter_frac: 0.0, spillover: 0.0, absorption: 0.0}
     elements:
       baffle: {absorption: 0.01}
-      window:    {obj_type: Dielectric, reflection: 0.01, thickness: 0.002, index: 1.525, loss_tangent: 3.0E-4}
+      window:    {obj_type: Dielectric, reflection: 0.01, thickness: 0.03, index: 1.525, loss_tangent: 3.0E-4}
       # IR shaders:  emissivity proportional to frequency, pinned to 90GHz value derived from Bicep3
       RTMLI_10: {temperature: 150.0, absorption: [0.00399, 0.00399]}
       alumina_filt: {obj_type: Dielectric, temperature: 50.0, reflection: 0.02, thickness: 0.010, index: 3.1, loss_tangent: 3.0E-4}
