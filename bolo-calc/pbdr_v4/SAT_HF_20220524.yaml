@@ -36,12 +36,12 @@ instrument:
       # Optical design Stark 11.5
       # The the maximum thickness of the objective lens is 71mm.  The effective thickness for loss calculations will be
       # less than this, as the field from each detector is spread over the aperture.  We use a guess of 80% of the maximum.
-      lens1:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.057,  index: 1.52, loss_tangent: 1.5E-4}
+      lens1:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.057,  index: 1.52, loss_tangent: 1.0E-4}
       # assume same spillover as MF_2
       ApStop:       {temperature: 1.0, spillover:[0.125, 0.079]}
       # The the maximum thickness of the objective lens is 53mm.  The effective thickness for loss calculations will be
       # less than this, as individual detectors illuminate different portions of the lens.  We use a guess of 90% of the maximum.
-      lens2:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.048,  index: 1.52, loss_tangent: 1.5E-4}
+      lens2:        {obj_type: Dielectric, temperature:  1.0, reflection: 0.02, thickness: 0.048,  index: 1.52, loss_tangent: 1.0E-4}
       lowpass:      {temperature: 0.1, absorption: 0.01, reflection: 0.05}
   channel_default:
     band_response: 1.0
