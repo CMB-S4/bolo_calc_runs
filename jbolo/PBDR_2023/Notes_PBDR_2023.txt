@@ -1,0 +1,25 @@
+January, 2023
+
+Plan:
+
+  Run/document updated version of all telescopes, all channels with:
+  
+  - floating Psat, for flat bands, then logistic bands.  Compare Psats and NETs.
+  - Run LF's with floating low band edge, to show NET dependence.
+  - Run all NET and NEg_pwv optimizations over band center/width to show where we are.
+  
+  Use the default logistic values to redetermine target Psats.
+  Then:
+  - Set all Psats to fixed for remainder of runs:
+  - Run with higher optics temp (esp nylon, alumina) to see that NET dependence.
+   
+
+Katie Harrington's input on LATR, via slack on 1/18/2023:
+-12 RTMLI layers [currently 10 layers]
+-alumina anywhere from 40-90K (90 is high but would explore the whole space).  [currently 50K]
+-alumina anywhere from 3-15mm thick (each wedge is different) [currently 10mm]
+-nylon anywhere from 4-20K (20 is also high) [currently 4K]
+-nylon thickness 3-6mm (It's in the model at 4mm but would be curious about changing it in case it matters)  [currently 7.5mm]
+
+
+  
