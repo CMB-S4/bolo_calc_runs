@@ -13,7 +13,7 @@ sources:
   atmosphere:
     # This shows how to do it with the bolo-calc hdf5 file.
     source_type: hdf5  #
-    file: 'atmos/atm_20201217.hdf5'
+    file: '../atmos/atm_20201217.hdf5'
     site: 'Atacama'
     pwv: 993      # microns, from 0 to 8000.  321u for Pole from Kuo's paper, ~8 month observing season.
     elevation: 50  # degrees, integer from 1 to 90

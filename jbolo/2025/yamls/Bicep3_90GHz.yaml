@@ -1,4 +1,4 @@
-version: {date: 20250210, name: 'Bicep3'}
+version: {date: 20250210, name: 'Bicep3_orig'}
 # Fixed LF wafer counts, which were off by a factor of two, and adjusted MF/HF for pixels lost to pins.
 # Setting spillovers to those calculated by P. Grimes here:
 # https://docs.google.com/spreadsheets/d/1dppe8RRixXaNPDD-mv_Fw45q-ndAt2ETHffZ9tGA1W0/edit?gid=439824212#gid=439824212
@@ -13,22 +13,24 @@ sources:
   atmosphere:
     # This shows how to do it with the bolo-calc hdf5 file.
     source_type: hdf5  #
-    file: 'atmos/atm_20201217.hdf5'
+    file: '../atmos/atm_20201217.hdf5'
     site: 'Pole'
     pwv: 321      # microns, from 0 to 8000.  321u for Pole from Kuo's paper, ~8 month observing season.
-    elevation: 50  # degrees, integer from 1 to 90
+    elevation: 55  # degrees, integer from 1 to 90
 optics_defaults: {temperature: 250.0, reflection: 0.0, scatter_frac: 0.0, spillover: 0.0, absorption: 0.0}
 optical_elements:
   # requires python 3.7 or later, because we assume dict{} is ordered.
   # This list of elements starts with the one closest to the sky, and moves toward the detector.
-  baffle:       {obj_type: Bespoke,    absorption: 0.01}
-  window:       {obj_type: LossTangent, reflection: 0.003, thickness: 0.025, index: 1.525, loss_tangent: 1.40E-4}
+  baffle:       {obj_type: Bespoke,    absorption: 0.0045}
+    ##window:       {obj_type: LossTangent, reflection: 0.003, thickness: 0.010, index: 1.525, loss_tangent: 2.22E-4}
+  window:       {obj_type: LossTangent, temperature: 270.0,reflection: 0.003, thickness: 0.03175, index: 1.525, loss_tangent: 2.22E-4}
   RTMLI_10 :    {obj_type: Bespoke,     temperature: 150.0,absorption: [0.00399, 0.00399] }  # 10 layers
+  hwp:          {obj_type: Bespoke,     temperature: 1.0,  absorption: [0.00001, 0.00001] }
   alumina_filt: {obj_type: LossTangent, temperature: 50.0, reflection: 0.02, thickness: 0.010, index: 3.1, loss_tangent: 3.0E-4}
-  lyot:         {obj_type: Bespoke,     temperature: 4.0,  absorption: [0.13, 0.06]}   # 0.13 is from Bicep3 paper
-  lens1:        {obj_type: LossTangent, temperature: 4.0,  reflection: 0.02, thickness: 0.021, index: 3.1, loss_tangent: 3.0E-4}
-  nylon_filt:   {obj_type: Bespoke,     temperature: 4.0,  reflection: 0.01, absorption: [0.006,  0.025]}
-  lens2:        {obj_type: LossTangent, temperature: 4.0,  reflection: 0.02, thickness: 0.027, index: 3.1, loss_tangent: 3.0E-4} 
+  lyot:         {obj_type: Bespoke,     temperature: 5.5,  absorption: [0.13, 0.06]}   # 0.13 is from Bicep3 paper
+  lens1:        {obj_type: LossTangent, temperature: 5.5,  reflection: 0.02, thickness: 0.021, index: 3.1, loss_tangent: 3.0E-4}
+  nylon_filt:   {obj_type: Bespoke,     temperature: 5.5,  reflection: 0.01, absorption: [0.006,  0.025]}
+  lens2:        {obj_type: LossTangent, temperature: 5.5,  reflection: 0.02, thickness: 0.027, index: 3.1, loss_tangent: 3.0E-4} 
   lowpass:      {obj_type: Bespoke,     temperature: 0.3,  absorption: 0.01, reflection: 0.05}
 bolo_config:
   # For aperture stop calcs
@@ -59,13 +61,19 @@ channels:
   MF_1:
     chnum: 0  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  96.1  # not used
+    # Based on quoted bandwidth in paper
     nu_low: 82.7        # if a band_response file is given, these set the low and high limits of integration.
     nu_high: 109.5
+    #
+    # Based on H.Hui's email saying he used 25% bandwidth
+    #nu_low: 84.09        
+    #nu_high: 108.11
+    #
     #read_frac: 0.05
     readout_NEI: 8.0e-12 # A/rtHz, see fig 21 of arXiv:2110.00482
     band_response : {method: flat}
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
-    det_eff: 0.5
+    det_eff: 0.50 
     #psat: 4.60e-12  # see psat_method above.
     horn_diameter: 7.5e-3   # square patch size from Bicep3 paper.
     pixel_spacing: 8.0e-3
