@@ -21,17 +21,17 @@ optics_defaults: {temperature: 250.0, reflection: 0.0, scatter_frac: 0.0, spillo
 optical_elements:
   # requires python 3.7 or later, because we assume dict{} is ordered.
   # This list of elements starts with the one closest to the sky, and moves toward the detector.
-  baffle:       {obj_type: Bespoke,    absorption: 0.0045}
+  baffle:       {obj_type: Bespoke,    absorption: 0.0045}   # CV says 2021 paper value is not right, more like 3.3KRJ at 90GHz.
     ##window:       {obj_type: LossTangent, reflection: 0.003, thickness: 0.010, index: 1.525, loss_tangent: 2.22E-4}
-  window:       {obj_type: LossTangent, temperature: 270.0,reflection: 0.003, thickness: 0.03175, index: 1.525, loss_tangent: 2.22E-4}
-  RTMLI_10 :    {obj_type: Bespoke,     temperature: 150.0,absorption: [0.00399, 0.00399] }  # 10 layers
+  window:       {obj_type: LossTangent, temperature: 260.0,reflection: 0.003, thickness: 0.03175, index: 1.525, loss_tangent: 2.22E-4}
+  RTMLI_10 :    {obj_type: Bespoke,     temperature: 150.0,absorption: [0.006, 0.006] }  # 10 layers
   hwp:          {obj_type: Bespoke,     temperature: 1.0,  absorption: [0.00001, 0.00001] }
   alumina_filt: {obj_type: LossTangent, temperature: 50.0, reflection: 0.02, thickness: 0.010, index: 3.1, loss_tangent: 3.0E-4}
   lyot:         {obj_type: Bespoke,     temperature: 5.5,  absorption: [0.13, 0.06]}   # 0.13 is from Bicep3 paper
   lens1:        {obj_type: LossTangent, temperature: 5.5,  reflection: 0.02, thickness: 0.021, index: 3.1, loss_tangent: 3.0E-4}
   nylon_filt:   {obj_type: Bespoke,     temperature: 5.5,  reflection: 0.01, absorption: [0.006,  0.025]}
   lens2:        {obj_type: LossTangent, temperature: 5.5,  reflection: 0.02, thickness: 0.027, index: 3.1, loss_tangent: 3.0E-4} 
-  lowpass:      {obj_type: Bespoke,     temperature: 0.3,  absorption: 0.01, reflection: 0.05}
+  lowpass:      {obj_type: Bespoke,     temperature: 5.0,  absorption: 0.01, reflection: 0.05}
 bolo_config:
   # For aperture stop calcs
   waist_factor: 3.0
@@ -46,13 +46,13 @@ bolo_config:
   # or "specified", in which case it is given for each detector channel explicitly.
   psat_method: 'from_optical_power'
   psat_factor: 2.5  # must a number if psat_method is "from_optical_power"
-  beta: 2.7   # this is beta = n-1. bolo-calc called it "carrier index". Note that G_dynamic is found from psat, T_c, and carrier_index
+  beta: 2.5   # (from arXiv:1403.4302 for Bicep3, n=2.5) this is beta = n-1. bolo-calc called it "carrier index". Note that G_dynamic is found from psat, T_c, and carrier_index
   #
   T_bath: 0.268
-  T_c: 0.50
+  T_c: 0.48
   R_bolo: 0.08   # as biased in operation, ie less than R_normal
   yield: 0.8
-  num_wafers_per_tube: 100
+  num_wafers_per_tube: 12
   optically_good_det_fraction: 1.0
 readout:
 #  method: 'fraction'  #in anticipation of getting NEI number/formula.
@@ -62,18 +62,18 @@ channels:
     chnum: 0  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  96.1  # not used
     # Based on quoted bandwidth in paper
-    nu_low: 82.7        # if a band_response file is given, these set the low and high limits of integration.
-    nu_high: 109.5
+    nu_low: 82.5        # if a band_response file is given, these set the low and high limits of integration.
+    nu_high: 109.9
     #
     # Based on H.Hui's email saying he used 25% bandwidth
     #nu_low: 84.09        
     #nu_high: 108.11
     #
     #read_frac: 0.05
-    readout_NEI: 8.0e-12 # A/rtHz, see fig 21 of arXiv:2110.00482
+    readout_NEI: 12.0e-12 # A/rtHz, see fig 21 of arXiv:2110.00482, then multiply by sqrt(2) to get from uArtsec to uA/rtHz.
     band_response : {method: flat}
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
-    det_eff: 0.50 
+    det_eff: 0.480 
     #psat: 4.60e-12  # see psat_method above.
     horn_diameter: 7.5e-3   # square patch size from Bicep3 paper.
     pixel_spacing: 8.0e-3

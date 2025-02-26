@@ -30,7 +30,7 @@ optical_elements:
   nylon_filt:   {obj_type: Bespoke,     temperature:  4.0, reflection: 0.01, absorption: [0.0065, 0.0245]}
   lens1:        {obj_type: LossTangent, temperature: 1.0,  reflection: 0.02, thickness: 0.055, index: 1.52, loss_tangent: 1.0E-4}
   # lyot abs numbers from Grimes: 
-  lyot:         {obj_type: Bespoke,     temperature: 4.4,  absorption: [0.49, 0.145]}   # 0.13 is from Bicep3 paper
+  lyot:         {obj_type: Bespoke,     temperature: 1.0,  absorption: [0.49, 0.145]}   # 0.13 is from Bicep3 paper
   # https://docs.google.com/spreadsheets/d/1dppe8RRixXaNPDD-mv_Fw45q-ndAt2ETHffZ9tGA1W0/edit?gid=439824212#gid=439824212
   #lyot:         {obj_type: Bespoke,     temperature: 1.0,  absorption: [0.482, 0.227, 0.512, 0.458, 0.160, 0.127, 0.06, 0.02]}  
   lens2:        {obj_type: LossTangent, temperature: 1.0,  reflection: 0.02, thickness: 0.059, index: 1.52, loss_tangent: 1.0E-4} 
@@ -48,7 +48,7 @@ bolo_config:
   # # options:  "from_optical_power", in which case psat = P_optical * psat_factor,
   # or "specified", in which case it is given for each detector channel explicitly.
   psat_method: 'from_optical_power'
-  psat_factor: 2.5  # must a number if psat_method is "from_optical_power"
+  psat_factor: 3.0  # must a number if psat_method is "from_optical_power"
   beta: 2.7   # this is beta = n-1. bolo-calc called it "carrier index". Note that G_dynamic is found from psat, T_c, and carrier_index
   #
   T_bath: 0.1
