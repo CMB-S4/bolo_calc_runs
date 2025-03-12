@@ -1,0 +1,10 @@
+# Mapping speed ratios
+# Channel  Pole_max/Pole_orig  Chile_max/Chile_AoAscaledoptics
+LF_1            1.64            1.49
+LF_2            3.98            5.34
+MF_1_1          2.14            2.25
+MF_2_1          2.06            2.23
+MF_1_2          2.82            4.00
+MF_2_2          2.57            3.69
+HF_1            1.10            1.77
+HF_2            1.10            1.70
