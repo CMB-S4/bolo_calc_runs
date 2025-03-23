@@ -1,4 +1,4 @@
-version: {date: 20240924, name: 'S4_aggr+HWP'}
+version: {date: 20241121, name: 'S4_aggr+HWP_phase2'}
 # Fixed LF wafer counts, which were off by a factor of two, and adjusted MF/HF for pixels lost to pins.
 # Setting spillovers to those calculated by P. Grimes here:
 # https://docs.google.com/spreadsheets/d/1dppe8RRixXaNPDD-mv_Fw45q-ndAt2ETHffZ9tGA1W0/edit?gid=439824212#gid=439824212
@@ -14,8 +14,8 @@ sources:
     # This shows how to do it with the bolo-calc hdf5 file.
     source_type: hdf5  #
     file: 'C:\Users\Paul Grimes\Documents\GitHub\jbolo\atmos\atm_20201217.hdf5'
-    site: 'Pole'
-    pwv: 321      # microns, from 0 to 8000.  321u for Pole from Kuo's paper, ~8 month observing season.
+    site: 'Atacama'
+    pwv: 993      # microns, from 0 to 8000.  321u for Pole from Kuo's paper, ~8 month observing season.
     elevation: 50  # degrees, integer from 1 to 90
 optics_defaults: {temperature: 273.0, reflection: 0.0, scatter_frac: 0.0, spillover: 0.0, absorption: 0.0}
 optical_elements:
@@ -24,12 +24,13 @@ optical_elements:
   baffle:       {obj_type: Bespoke,    absorption: 0.01}
   window:       {obj_type: LossTangent, reflection: 0.003, thickness: 0.020, index: 1.525, loss_tangent: 3.0E-4}
   RTMLI_10 :    {obj_type: Bespoke,     temperature: 150.0, absorption: [0.00399, 0.00399, 0.00399, 0.00399, 0.00399, 0.00399, 0.00435, 0.0083] }  # 10 layers
+  hwp:          {obj_type: LossTangent, temperature: 55.0, reflection: 0.02, thickness: 0.004, index: 3.1, loss_tangent: 3.0E-4}
   alumina_filt: {obj_type: LossTangent, temperature: 50.0, reflection: 0.02, thickness: 0.010, index: 3.1, loss_tangent: 3.0E-4}
   nylon_filt:   {obj_type: Bespoke,     temperature:  4.0, reflection: 0.01, absorption: [0.0003, 0.0007, 0.0056, 0.0075, 0.0223, 0.0265, 0.0698, 0.123 ]}
   lens1:        {obj_type: LossTangent, temperature: 1.0,  reflection: 0.02, thickness: 0.055, index: 1.52, loss_tangent: 1.0E-4}
   # lyot abs numbers from Grimes: 
   # https://docs.google.com/spreadsheets/d/1dppe8RRixXaNPDD-mv_Fw45q-ndAt2ETHffZ9tGA1W0/edit?gid=439824212#gid=439824212
-  lyot:         {obj_type: Bespoke,     temperature: 1.0,  absorption: [0.173, 0.091, 0.162, 0.141, 0.065, 0.079, 0.06, 0.02]}  
+  lyot:         {obj_type: Bespoke,     temperature: 1.0,  absorption: [0.482, 0.227, 0.512, 0.458, 0.160, 0.127, 0.06, 0.02]}  
   lens2:        {obj_type: LossTangent, temperature: 1.0,  reflection: 0.02, thickness: 0.059, index: 1.52, loss_tangent: 1.0E-4} 
   lowpass:      {obj_type: Bespoke,     temperature: 0.1,  absorption: 0.01, reflection: 0.05}
 bolo_config:
@@ -53,7 +54,7 @@ bolo_config:
   R_bolo: 0.006   # as biased in operation, ie less than R_normal
   yield: 0.8
   num_wafers_per_tube: 12
-  optically_good_det_fraction: 0.875
+  optically_good_det_fraction: 1.0
 readout:
 #  method: 'fraction'  #in anticipation of getting NEI number/formula.
   method: 'from_NEI'   # uses channels readout_NEI
@@ -69,9 +70,9 @@ channels:
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
     det_eff: 0.65
     #psat: 1.0e-12  # see psat_method above.
-    horn_diameter: 30.85e-3   # meters
-    pixel_spacing: 31.0e-3
-    num_det_per_wafer: 24  #9/24/2024, 19 pixels/wafer
+    horn_diameter: 18.95e-3   # meters
+    pixel_spacing: 19.1e-3
+    num_det_per_wafer: 74  #9/24/2024, 19 pixels/wafer
   LF_2:
     chnum: 1  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  36.5  # not used
@@ -83,9 +84,9 @@ channels:
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
     det_eff: 0.65
     #psat: 4.18e-12  # see psat_method above.
-    horn_diameter: 30.85e-3   # meters
-    pixel_spacing: 31.0e-3
-    num_det_per_wafer: 24  #9/24/2024, 19 pixels/wafer
+    horn_diameter: 18.95e-3   # meters
+    pixel_spacing: 19.1e-3
+    num_det_per_wafer: 74  #9/24/2024, 19 pixels/wafer
   MF_1_1:
     chnum: 2  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  85.0  # not used
@@ -97,9 +98,9 @@ channels:
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
     det_eff: 0.65
     #psat: 4.60e-12  # see psat_method above.
-    horn_diameter: 9.25e-3   # meters
-    pixel_spacing: 9.4e-3
-    num_det_per_wafer: 294   # 9/24/2024, 215 actual pixels (217-2 for pins), 430 detectors/band
+    horn_diameter: 5.15e-3   # meters
+    pixel_spacing: 5.3e-3
+    num_det_per_wafer: 860   # 9/24/2024, 215 actual pixels (217-2 for pins), 430 detectors/band
   MF_2_1:
     chnum: 3  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  95.0  # not used
@@ -111,9 +112,9 @@ channels:
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
     det_eff: 0.65
     #psat: 12.51e-12  # see psat_method above.
-    horn_diameter: 8.65e-3   # meters
-    pixel_spacing: 8.8e-3
-    num_det_per_wafer: 338   # 9/24/2024, 269 actual pixels, (271-2 for pins), so 538
+    horn_diameter: 5.15e-3   # meters
+    pixel_spacing: 5.30e-3
+    num_det_per_wafer: 860   # 9/24/2024, 269 actual pixels, (271-2 for pins), so 538
   MF_1_2:
     chnum: 4  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  145.0  # not used
@@ -125,9 +126,9 @@ channels:
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
     det_eff: 0.65
     #psat: 4.60e-12  # see psat_method above.
-    horn_diameter: 9.25e-3   # meters
-    pixel_spacing: 9.4e-3
-    num_det_per_wafer: 294   # 9/24/2024, 215 actual pixels (217-2 for pins), 430 detectors/band
+    horn_diameter: 5.15e-3   # meters
+    pixel_spacing: 5.3e-3
+    num_det_per_wafer: 860   # 9/24/2024, 215 actual pixels (217-2 for pins), 430 detectors/band
   MF_2_2:
     chnum: 5  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  155.0  # not used
@@ -139,9 +140,9 @@ channels:
     #band_response : {method: bandfile, fname : spt3g_90_pixelband.txt }
     det_eff: 0.65
     #psat: 4.60e-12  # see psat_method above.
-    horn_diameter: 8.65e-3   # meters
-    pixel_spacing: 8.8e-3
-    num_det_per_wafer: 338 # 9/24/2024, 269 actual pixels, (271-2 for pins), so 538
+    horn_diameter: 5.15e-3   # meters
+    pixel_spacing: 5.3e-3
+    num_det_per_wafer: 860 # 9/24/2024, 269 actual pixels, (271-2 for pins), so 538
   HF_1:
     chnum: 6  # This sets the order of lists in optical elements, must start at zero and increment from there.
     band_center:  227.0  # not used
